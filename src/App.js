@@ -8,8 +8,11 @@ class App extends React.Component {
   render(){
     return (
       <div className="test-div">
-        <h1>hi</h1>
-        <img src={mainimg} alt="Logo" height="50%" width="50%"/>
+        <header>
+          <p>header</p>
+        </header>
+        <h1>main body</h1>
+        {/* <img src={mainimg} alt="Logo" height="50%" width="50%"/> */}
         <GridController />
       </div>
     );
