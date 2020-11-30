@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.scss';
+import GridController from './Controllers/GridController'
+import mainimg from './logo1.jpg'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+  render(){
+    return (
+      <div className="test-div">
+        <h1>hi</h1>
+        <img src={mainimg} alt="Logo" height="50%" width="50%"/>
+        <GridController />
+      </div>
+    );
+  }
 }
 
 export default App;
