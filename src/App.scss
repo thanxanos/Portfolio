@@ -1,6 +1,20 @@
-$mainColor: #226089;
+// $mainColor: #black;
+$mainColor: #071e3d; 
 
 body {
   background: $mainColor;
-  color: #fff;
+  color: #f8f8f9;
+}
+
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  background: #f8f8f9;
 }
