@@ -1,0 +1,44 @@
+$mainColor: #071e3d; 
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  background: #f8f8f9;
+}
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a{
+  color: $mainColor;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar .menu li a{
+  color: #1f4287;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+  color:   #f8777d;
+}
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+}

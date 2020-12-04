@@ -1,20 +1,28 @@
 // $mainColor: #black;
 $mainColor: #071e3d; 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
 body {
   background: $mainColor;
   color: #f8f8f9;
 }
 
-.max-width{
-  max-width: 1300px;
-  padding: 0 80px;
-  margin: auto;
+.home {
+  display: flex;
+  // background: url("images/banner.jpg") no-repeat center;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  // font-family: 'Ubuntu', sans-serif;
 }
 
-.navbar{
-  position: fixed;
-  width: 100%;
-  padding: 15px 0;
-  background: #f8f8f9;
+.home .max-width{
+  margin: auto 0 auto 30px;
 }
