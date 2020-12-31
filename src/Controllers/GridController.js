@@ -5,6 +5,7 @@ class GridController extends React.Component {
   render(){
     return(
         <div>
+          <h2>Palette</h2>
           <div className="pal-1"></div>
           <div className="pal-2"></div>
           <div className="pal-3"></div>

@@ -5,7 +5,7 @@ class HomeController extends React.Component {
   render(){
     return(
       <div>
-        <p>landing page</p>
+        <p>Landing page</p>
       </div>
     )
   }
