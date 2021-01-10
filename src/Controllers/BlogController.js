@@ -1,10 +1,10 @@
 import React from 'react';
-// import '../scss/GridController.scss';
+import '../scss/Blog.scss';
 
 class BlogController extends React.Component {
   render(){
     return(
-      <div>
+      <div className="blog-div" id="blog">
         <p>Blog</p>
       </div>
     )

@@ -1,10 +1,10 @@
 import React from 'react';
-// import '../scss/GridController.scss';
+import '../scss/Home.scss';
 
 class HomeController extends React.Component {
   render(){
     return(
-      <div>
+      <div className="home-div" id="home">
         <p>Landing page</p>
       </div>
     )

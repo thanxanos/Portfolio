@@ -1,10 +1,10 @@
 import React from 'react';
-// import '../scss/GridController.scss';
+import '../scss/Skills.scss';
 
 class SkillsController extends React.Component {
   render(){
     return(
-      <div>
+      <div className="skill-div" id="skills">
         <p>Skills</p>
       </div>
     )

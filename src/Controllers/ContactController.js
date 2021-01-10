@@ -1,10 +1,10 @@
 import React from 'react';
-// import '../scss/GridController.scss';
+import '../scss/Contact.scss';
 
 class ContactController extends React.Component {
   render(){
     return(
-      <div>
+      <div className="contact-div" id="contact">
         <p>Contact</p>
       </div>
     )

@@ -1,10 +1,10 @@
 import React from 'react';
-// import '../scss/GridController.scss';
+import '../scss/Projects.scss';
 
 class ProjectsController extends React.Component {
   render(){
     return(
-      <div>
+      <div className="prjt-div" id="projects">
         <p>Projects</p>
       </div>
     )
