@@ -18,7 +18,7 @@ class App extends React.Component {
     return (
         <div className="full-div">
           <Navbar />
-          <section className="home" id="home">
+          <section className="grid" id="home">
             <div className="max-width">
               <div className="home-content">
                 <GridController />

@@ -4,7 +4,7 @@ import '../scss/Contact.scss';
 class ContactController extends React.Component {
   render(){
     return(
-      <div className="contact-div" id="contact">
+      <div className="grid" id="contact">
         <p>Contact</p>
       </div>
     )

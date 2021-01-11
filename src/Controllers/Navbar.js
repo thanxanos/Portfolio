@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import '../scss/Navbar.scss';
 import * as FaIcons from 'react-icons/fa';
-import { Link, animateScroll as scroll } from 'react-scroll';
-
+import { Link } from 'react-scroll';
+import Resume from './ResumeController';
 
 
 function Navbar(){
@@ -65,6 +65,7 @@ function Navbar(){
               duration={500}
               onClick={() => setNavbar(false)}
             >Blog</Link></li>
+            <li><Resume /></li>
             <li><Link
               activeClass="active"
               to="contact"

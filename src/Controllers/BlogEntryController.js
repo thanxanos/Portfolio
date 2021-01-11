@@ -8,7 +8,7 @@ const BlogEntry = props => {
 
   console.log(props.images)
   return (
-    <div className="card">
+    <div className="card" id="card">
       <h1 className="blog-title">{props.entry.title}</h1>
       {props.images}
       <div className="blog-description">

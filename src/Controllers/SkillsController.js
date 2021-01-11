@@ -4,7 +4,7 @@ import '../scss/Skills.scss';
 class SkillsController extends React.Component {
   render(){
     return(
-      <div className="skill-div" id="skills">
+      <div className="grid" id="skills">
         <p>Skills</p>
       </div>
     )

@@ -23,10 +23,15 @@ class BlogController extends React.Component {
       { id: 13, src: '../Imgs/img13.jpg', title: 'img13', description: 'image13' },
       { id: 14, src: '../Imgs/img14.jpg', title: 'img14', description: 'image14' },
       { id: 15, src: '../Imgs/img15.jpg', title: 'img15', description: 'image15' },
-      { id: 16, src: '../Imgs/img16.jpg', title: 'img16', description: 'image16' }
+      { id: 16, src: '../Imgs/img16.jpg', title: 'img16', description: 'image16' },
+      { id: 17, src: '../Imgs/img17.jpg', title: 'img17', description: 'image17' },
+      { id: 18, src: '../Imgs/img18.jpg', title: 'img18', description: 'image18' },
+      { id: 19, src: '../Imgs/img19.jpg', title: 'img19', description: 'image19' },
+      { id: 20, src: '../Imgs/img20.jpg', title: 'img20', description: 'image20' },
+      { id: 20, src: '../Imgs/img21.jpg', title: 'img21', description: 'image21' }
     ]
   }
-
+  //maybe move this to a controller and take it out of state for cleaner code
   newImages = () => { 
     var setImages = this.state.images.map(({id, src, title, description}) => <img key={id} src={src} title={title} alt={description} className='blog-img' />)
     return setImages[Math.floor(Math.random() * setImages.length)]
@@ -41,7 +46,7 @@ class BlogController extends React.Component {
 
   render(){
     return(
-      <div className="blog-div" id="blog">
+      <div className="grid" id="blog">
           {this.state.blogs.map(entry => <BlogEntry key={entry.pubDate} entry={entry} images={this.newImages()} />)}
       </div>
     )
