@@ -21,8 +21,6 @@ class App extends React.Component {
           <section className="home" id="home">
             <div className="max-width">
               <div className="home-content">
-                <div className="text-1">Hello, my name is</div>
-                <div className="text-2">Zoe Xanos</div>
                 <GridController />
                 <HomeController />
                 <AboutController />
