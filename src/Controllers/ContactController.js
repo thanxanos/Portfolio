@@ -198,7 +198,7 @@ class ContactForm extends Component {
                   formErrors.message.length > 0 ? 'error' : null
                 }`}
                 onChange={this.handleChange}
-                placeholder='Message'
+                placeholder='Leave a message here!'
                 noValidate
               ></textarea>
               {formErrors.message.length > 0 && (
