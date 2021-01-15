@@ -41,7 +41,7 @@ class BlogController extends React.Component {
   componentDidMount() {
     fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zxanos')
       .then(resp => resp.json())
-      .then(blogs => this.setState({ blogs: blogs.items.slice(1,4)}))
+      .then(blogs => this.setState({ blogs: blogs.items.slice(0,3)}))
   }
 
   render(){

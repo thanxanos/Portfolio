@@ -30,12 +30,10 @@ class ContactForm extends Component {
     this.state = {
       name: '',
       email: '',
-      subject: '',
       message: '',
       formErrors: {
         name: '',
         email: '',
-        subject: '',
         message: '',
       },
     };
@@ -76,7 +74,6 @@ class ContactForm extends Component {
       let templateParams = {
         name: name,
         email: email,
-        subject: subject,
         message: message,
       };
 
@@ -86,7 +83,6 @@ class ContactForm extends Component {
         --SUBMITTING--
         Name: ${name}
         Email: ${email}
-        Subject: ${subject}
         Message: ${message}
       `);
       
@@ -104,7 +100,6 @@ class ContactForm extends Component {
     this.setState({
       name: '',
       email: '',
-      subject: '',
       message: '',
     });
   }
@@ -120,9 +115,6 @@ class ContactForm extends Component {
         break;
       case 'email':
         formErrors.email = emailRegex.test(value) ? '' : 'Please enter a valid email address.';
-        break;
-      case 'subject':
-        formErrors.subject = value.length < 1 ? 'Please enter a subject.' : '';
         break;
       case 'message':
         formErrors.message = value.length < 1 ? 'Please enter a message' : '';
@@ -172,23 +164,6 @@ class ContactForm extends Component {
           </div>
 
           <div className='row'>
-            <div className='col-6'>
-              <input
-                type='subject'
-                name='subject'
-                value={this.state.subject}
-                className={`form-control formInput ${
-                  formErrors.subject.length > 0 ? 'error' : null
-                }`}
-                onChange={this.handleChange}
-                placeholder='Subject'
-                noValidate
-              ></input>
-              {formErrors.subject.length > 0 && (
-                <span className='errorMessage'>{formErrors.subject}</span>
-              )}
-            </div>
-
             <div className='col-6'>
               <textarea
                 rows='5'
