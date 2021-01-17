@@ -5,7 +5,7 @@ class SkillsController extends React.Component {
   render(){
     return(
       <div className="grid" id="skills">
-        <p>Skills</p>
+        <p>Ruby, Javascript, React.js, & Python</p>
       </div>
     )
   }
