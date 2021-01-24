@@ -10,9 +10,12 @@ const BlogEntry = props => {
   return (
     <div className="card" id="card">
       {props.images}
+      <hr />
       <h1 className="blog-title">{props.entry.title}</h1>
       <div className="blog-description">
+        <div className="blog-txt">
         {props.entry.description.slice(1,150).replace(regex, '')}...
+        </div>
         <a 
           target="_blank"
           rel="noopener noreferrer"

@@ -19,7 +19,7 @@ class App extends React.Component {
         <div className="full-div">
           <Navbar />
           <section id="home">
-            <div className="test">
+            <div className="wrapper">
               <div className="home-content">
                 <HomeController />
                 <AboutController />

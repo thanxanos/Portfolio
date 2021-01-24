@@ -47,6 +47,9 @@ class BlogController extends React.Component {
   render(){
     return(
       <div id="blog">
+        <div className="title">
+          <h1>Medium | <span>@zxanos</span></h1>
+        </div>
           {this.state.blogs.map(entry => <BlogEntry key={entry.pubDate} entry={entry} images={this.newImages()} />)}
       </div>
     )
