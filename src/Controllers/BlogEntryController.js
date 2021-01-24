@@ -9,8 +9,8 @@ const BlogEntry = props => {
   console.log(props.images)
   return (
     <div className="card" id="card">
-      <h1 className="blog-title">{props.entry.title}</h1>
       {props.images}
+      <h1 className="blog-title">{props.entry.title}</h1>
       <div className="blog-description">
         {props.entry.description.slice(1,150).replace(regex, '')}...
         <a 
