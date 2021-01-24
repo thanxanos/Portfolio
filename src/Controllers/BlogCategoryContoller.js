@@ -2,7 +2,7 @@ import React from 'react';
 
 const BlogCategory = props => {
   return (
-    <li className="blog-category">{props.category.toUpperCsse()}</li>
+    <li className="blog-category">{props.category.toUpperCase()}</li>
   )
 }
 

@@ -4,7 +4,7 @@ import '../scss/Skills.scss';
 class SkillsController extends React.Component {
   render(){
     return(
-      <div className="grid" id="skills">
+      <div id="skills">
         <p>Ruby, Javascript, React.js, & Python</p>
       </div>
     )

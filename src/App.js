@@ -18,20 +18,19 @@ class App extends React.Component {
     return (
         <div className="full-div">
           <Navbar />
-          <section className="grid" id="home">
-            <div className="max-width">
+          <section id="home">
+            <div className="test">
               <div className="home-content">
-                <GridController />
                 <HomeController />
                 <AboutController />
                 <SkillsController />
                 <ProjectsController />
                 <BlogController />
                 <ContactController />
-                <FooterController />
               </div>
             </div>
           </section>
+          <FooterController />
         </div>
     );
   }

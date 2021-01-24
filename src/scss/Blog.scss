@@ -1,8 +1,10 @@
 #blog{
-  color: black;
-  height: 700px;
+  color: white;
+  min-height: 700px;
   // background-color: #CD966B;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 2em 1em 1em;
 }
 

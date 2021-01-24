@@ -46,7 +46,7 @@ class BlogController extends React.Component {
 
   render(){
     return(
-      <div className="grid" id="blog">
+      <div id="blog">
           {this.state.blogs.map(entry => <BlogEntry key={entry.pubDate} entry={entry} images={this.newImages()} />)}
       </div>
     )

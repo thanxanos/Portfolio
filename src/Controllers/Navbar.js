@@ -20,7 +20,7 @@ function Navbar(){
               duration={500}
               >Zoe Xanos</Link></li></div>
             <ul className={ navbar ? 'menu active': 'menu'}>
-            <li><Link
+            {/* <li><Link
               activeClass="inactive"
               to="home"
               spy={true}
@@ -28,7 +28,7 @@ function Navbar(){
               offset={-70}
               duration={500}
               onClick={() => setNavbar(false)}
-              >Home</Link></li>
+              >Home</Link></li> */}
             <li><Link
               activeClass="active"
               to="about"
@@ -65,7 +65,6 @@ function Navbar(){
               duration={500}
               onClick={() => setNavbar(false)}
             >Blog</Link></li>
-            <li><Resume /></li>
             <li><Link
               activeClass="active"
               to="contact"
@@ -75,6 +74,7 @@ function Navbar(){
               duration={500}
               onClick={() => setNavbar(false)}
             >Contact</Link></li>
+            <li><Resume /></li>
             </ul>
             <div className="menu-btn" onClick={showNavbar}>
              { navbar ? <FaIcons.FaTimes className='side-btn'/> : <FaIcons.FaBars className='side-btn'/>}

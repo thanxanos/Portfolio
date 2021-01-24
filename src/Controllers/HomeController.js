@@ -4,7 +4,7 @@ import '../scss/Home.scss';
 class HomeController extends React.Component {
   render(){
     return(
-      <div className="grid" id="landing">
+      <div id="landing">
         <p>Landing page</p>
       </div>
     )

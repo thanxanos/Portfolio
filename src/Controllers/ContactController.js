@@ -68,7 +68,7 @@ class ContactForm extends Component {
 
     if (formValid(this.state)) {
       // Handle form validation success
-      const { name, email, subject, message } = this.state;
+      const { name, email, message } = this.state;
 
       // Set template params
       let templateParams = {
@@ -129,7 +129,7 @@ class ContactForm extends Component {
     const { formErrors } = this.state;
 
     return (
-      <div className="grid" id="contact">
+      <div id="contact">
         <form id='contact-form' onSubmit={this.handleSubmit} noValidate>
           <div className='row'>
             <div className='col-6'>
