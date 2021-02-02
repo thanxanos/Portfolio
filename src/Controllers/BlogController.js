@@ -45,6 +45,7 @@ class BlogController extends React.Component {
   }
 
   render(){
+    console.log("hello")
     return(
       <div id="blog">
         <div className="title">
