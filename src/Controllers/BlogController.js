@@ -39,17 +39,16 @@ class BlogController extends React.Component {
 
 
   componentDidMount() {
-    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zxanos')
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zoexanos')
       .then(resp => resp.json())
       .then(blogs => this.setState({ blogs: blogs.items.slice(0,3)}))
   }
 
   render(){
-    console.log("goodbye")
     return(
       <div id="blog">
         <div className="title">
-          <h1>Medium | <span>@zxanos</span></h1>
+          <h1>Medium | <span>@zoexanos</span></h1>
         </div>
           {this.state.blogs.map(entry => <BlogEntry key={entry.pubDate} entry={entry} images={this.newImages()} />)}
       </div>

@@ -130,9 +130,11 @@ class ContactForm extends Component {
 
     return (
       <div id="contact">
+        <div className="contactwrapper">
+        <h1>Contact</h1>
         <form id='contact-form' onSubmit={this.handleSubmit} noValidate>
           <div className='row'>
-            <div className='col-6'>
+            <div className='namefield'>
               <input
                 type='text'
                 name='name'
@@ -141,13 +143,14 @@ class ContactForm extends Component {
                 onChange={this.handleChange}
                 placeholder='Name'
                 noValidate
+                id="fielddesign"
               ></input>
               {formErrors.name.length > 0 && (
                 <span className='errorMessage'>{formErrors.name}</span>
               )}
             </div>
 
-            <div className='col-6'>
+            <div className='emailfield'>
               <input
                 type='email'
                 name='email'
@@ -156,6 +159,7 @@ class ContactForm extends Component {
                 onChange={this.handleChange}
                 placeholder='Email'
                 noValidate
+                id="fielddesign"
               ></input>
               {formErrors.email.length > 0 && (
                 <span className='errorMessage'>{formErrors.email}</span>
@@ -164,7 +168,7 @@ class ContactForm extends Component {
           </div>
 
           <div className='row'>
-            <div className='col-6'>
+            <div className='msgfield'>
               <textarea
                 rows='5'
                 name='message'
@@ -175,6 +179,7 @@ class ContactForm extends Component {
                 onChange={this.handleChange}
                 placeholder='Leave a message and your LinkedIn here!'
                 noValidate
+                id="fielddesign"
               ></textarea>
               {formErrors.message.length > 0 && (
                 <span className='errorMessage'>{formErrors.message}</span>
@@ -185,7 +190,9 @@ class ContactForm extends Component {
             Submit
           </button>
         </form>
+
         <ToastContainer />
+        </div>
       </div>
     );
   }

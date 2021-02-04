@@ -1,4 +1,30 @@
 #contact {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+}
 
-  height: 570px;
+.contactwrapper {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // margin: 0 80px;
+}
+
+#contact-form{
+  flex-flow: 2;
+  text-align: center;
+}
+
+#fielddesign {
+  min-width: 50%;
+}
+
+
+.contactwrapper h1 {
+  flex-flow: 1;
+  font-size: 35px;
+  color: white;
+  text-align: center;
 }

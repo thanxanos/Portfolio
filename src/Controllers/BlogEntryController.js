@@ -6,7 +6,6 @@ import '../scss/BlogEntry.scss';
 const BlogEntry = props => {
   var regex = /(<([^>]+)>)/ig
 
-  console.log(props.images)
   return (
     <div className="card" id="card">
       {props.images}
@@ -20,12 +19,12 @@ const BlogEntry = props => {
           target="_blank"
           rel="noopener noreferrer"
           href={props.entry.link}>
-        <p>
+      
           <button
             type='button'
             className='btn'
             >Read More</button>
-          </p>
+      
         </a>
       </div>
       <div className="blog-categories-container">
