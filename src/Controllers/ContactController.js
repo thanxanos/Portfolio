@@ -30,10 +30,12 @@ class ContactForm extends Component {
     this.state = {
       name: '',
       email: '',
+      linkedin: '',
       message: '',
       formErrors: {
         name: '',
         email: '',
+        linkedin: '',
         message: '',
       },
     };
@@ -68,12 +70,13 @@ class ContactForm extends Component {
 
     if (formValid(this.state)) {
       // Handle form validation success
-      const { name, email, message } = this.state;
+      const { name, email, linkedin, message } = this.state;
 
       // Set template params
       let templateParams = {
         name: name,
         email: email,
+        linkedin: linkedin,
         message: message,
       };
 
@@ -83,6 +86,7 @@ class ContactForm extends Component {
         --SUBMITTING--
         Name: ${name}
         Email: ${email}
+        LinkedIn: ${linkedin}
         Message: ${message}
       `);
       
@@ -100,6 +104,7 @@ class ContactForm extends Component {
     this.setState({
       name: '',
       email: '',
+      linkedin: '',
       message: '',
     });
   }
@@ -109,19 +114,19 @@ class ContactForm extends Component {
     const { name, value } = e.target;
     let formErrors = { ...this.state.formErrors };
 
-    switch (name) {
-      case 'name':
-        formErrors.name = value.length < 1 ? 'Please enter your name.' : '';
-        break;
-      case 'email':
-        formErrors.email = emailRegex.test(value) ? '' : 'Please enter a valid email address.';
-        break;
-      case 'message':
-        formErrors.message = value.length < 1 ? 'Please enter a message' : '';
-        break;
-      default:
-        break;
-    }
+    // switch (name) {
+    //   case 'name':
+    //     formErrors.name = value.length < 1 ? 'Please enter your name.' : '';
+    //     break;
+    //   case 'email':
+    //     formErrors.email = emailRegex.test(value) ? '' : 'Please enter a valid email address.';
+    //     break;
+    //   case 'message':
+    //     formErrors.message = value.length < 1 ? 'Please enter a message' : '';
+    //     break;
+    //   default:
+    //     break;
+    // }
     this.setState({ formErrors, [name]: value });
   };
 
@@ -141,15 +146,15 @@ class ContactForm extends Component {
                 value={this.state.name}
                 className={`form-control formInput ${formErrors.name.length > 0 ? 'error' : null}`}
                 onChange={this.handleChange}
-                placeholder='Name'
+                // placeholder='Name'
                 noValidate
                 id="fielddesign"
               ></input>
+              <label htmlFor='name'>Name:</label>
               {formErrors.name.length > 0 && (
                 <span className='errorMessage'>{formErrors.name}</span>
               )}
             </div>
-
             <div className='emailfield'>
               <input
                 type='email'
@@ -157,16 +162,31 @@ class ContactForm extends Component {
                 value={this.state.email}
                 className={`form-control formInput ${formErrors.email.length > 0 ? 'error' : null}`}
                 onChange={this.handleChange}
-                placeholder='Email'
                 noValidate
                 id="fielddesign"
               ></input>
+              <label htmlFor='email'>Email:</label>
               {formErrors.email.length > 0 && (
                 <span className='errorMessage'>{formErrors.email}</span>
               )}
             </div>
-          </div>
-
+            <div className="linkedinfield">
+              <input
+                  type='text'
+                  name='linkedin'
+                  value={this.state.linkedin}
+                  className={`form-control formInput ${formErrors.linkedin.length > 0 ? 'error' : null}`}
+                  onChange={this.handleChange}
+                  // placeholder='LinkedIn URL'
+                  noValidate
+                  id="fielddesign"
+                ></input>
+                <label htmlFor='linkedin'>LinkedIn URL:</label>
+                {formErrors.linkedin.length > 0 && (
+                  <span className='errorMessage'>{formErrors.linkedin}</span>
+                )}
+              </div>
+            </div>
           <div className='row'>
             <div className='msgfield'>
               <textarea
@@ -177,7 +197,7 @@ class ContactForm extends Component {
                   formErrors.message.length > 0 ? 'error' : null
                 }`}
                 onChange={this.handleChange}
-                placeholder='Leave a message and your LinkedIn here!'
+                placeholder='Message'
                 noValidate
                 id="fielddesign"
               ></textarea>
@@ -187,7 +207,7 @@ class ContactForm extends Component {
             </div>
           </div>
           <button className='submit-btn' type='submit'>
-            Submit
+            SEND
           </button>
         </form>
 

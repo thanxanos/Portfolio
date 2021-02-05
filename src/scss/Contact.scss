@@ -1,7 +1,15 @@
+
 #contact {
   height: 550px;
   display: flex;
   justify-content: center;
+}
+
+.contactwrapper h1 {
+  flex-flow: 1;
+  font-size: 35px;
+  color: white;
+  text-align: center;
 }
 
 .contactwrapper {
@@ -11,20 +19,137 @@
   align-items: center;
   // margin: 0 80px;
 }
+input, label {
+  display: block;
+}
+
 
 #contact-form{
   flex-flow: 2;
   text-align: center;
+  position: relative;
 }
 
 #fielddesign {
+  font-family: 'Krub', sans-serif;
   min-width: 50%;
+  align-items: center;
+  margin: 10px;
+}
+
+.namefield label {
+  float: left;
+  display: block;
+  // min-width: 52%;
+  // margin: 10px 0 80px 10px;
+  z-index: 100;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  color: #d3d3d3;
+  transition: 0.2s all;
+  cursor: text;
+}
+
+.emailfield label {
+  float: left;
+  display: block;
+  // min-width: 52%;
+  // margin: 10px;
+  z-index: 100;
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  color: #d3d3d3;
+  transition: 0.2s all;
+  z-index: 101;
+  cursor: text;
+}
+
+input[type="email" i] {
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #d3d3d3;
+  background: none; 
+}
+
+input[type="text" i] {
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid #d3d3d3;
+  box-shadow: none;
+  color: #111;
+  background: none;
+
+}
+
+.linkedinfield label {
+  float: left;
+  display: block;
+  // min-width: 56%;
+  // margin: 10px 0 80px 10px;
+  z-index: 102;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  color: #d3d3d3;
+  transition: 0.2s all;
+  z-index: 101;
+  cursor: text;
+}
+
+input:invalid {
+  outline: 0;
+}
+
+input:focus {
+  border-color:  #CD966B;
+}
+input:focus~label{
+  font-size: 14px;
+  margin-top: -14px;
+  color:  #CD966B;
 }
 
 
-.contactwrapper h1 {
-  flex-flow: 1;
-  font-size: 35px;
+// input[type="email" i] {
+
+//   font-family: 'Krub', sans-serif;
+//   font-size: 20px;
+//   height: 40px;
+//   background: none;
+//   border: 1.5px solid white;
+//   color: white;
+//   border-radius: 5px 5px 5px 5px;
+// }
+
+// input,textarea:focus {
+//   outline: none;
+  
+// }
+
+textarea {
+  font-family: 'Krub', sans-serif;
+  margin: 10px;
+  min-width: 50%;
+  font-size: 20px;
+  height: 200px;
+  background: none;
+  border: 1.5px solid white;
   color: white;
-  text-align: center;
+  border-radius: 5px 5px 5px 5px;
+  resize: none;
+}
+
+.submit-btn{
+  font-size: 20px;
+  font-family: 'Krub', sans-serif;
+  color: white;
+  background: none;
+  padding: 1em 4em;
+  border: 1.5px solid white;
+  cursor: pointer;
+  border-radius: 5px 5px 5px 5px;
 }
