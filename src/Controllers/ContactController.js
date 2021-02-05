@@ -140,6 +140,7 @@ class ContactForm extends Component {
         <form id='contact-form' onSubmit={this.handleSubmit} noValidate>
           <div className='row'>
             <div className='namefield'>
+            
               <input
                 type='text'
                 name='name'
@@ -147,10 +148,10 @@ class ContactForm extends Component {
                 className={`form-control formInput ${formErrors.name.length > 0 ? 'error' : null}`}
                 onChange={this.handleChange}
                 // placeholder='Name'
-                noValidate
+                required
                 id="fielddesign"
               ></input>
-              <label htmlFor='name'>Name:</label>
+              <label>Name:</label>
               {formErrors.name.length > 0 && (
                 <span className='errorMessage'>{formErrors.name}</span>
               )}
@@ -162,10 +163,10 @@ class ContactForm extends Component {
                 value={this.state.email}
                 className={`form-control formInput ${formErrors.email.length > 0 ? 'error' : null}`}
                 onChange={this.handleChange}
-                noValidate
+                required
                 id="fielddesign"
               ></input>
-              <label htmlFor='email'>Email:</label>
+              <label>Email:</label>
               {formErrors.email.length > 0 && (
                 <span className='errorMessage'>{formErrors.email}</span>
               )}
@@ -178,13 +179,13 @@ class ContactForm extends Component {
                   className={`form-control formInput ${formErrors.linkedin.length > 0 ? 'error' : null}`}
                   onChange={this.handleChange}
                   // placeholder='LinkedIn URL'
-                  noValidate
+                  required
                   id="fielddesign"
                 ></input>
-                <label htmlFor='linkedin'>LinkedIn URL:</label>
-                {formErrors.linkedin.length > 0 && (
+                <label>LinkedIn URL:</label>
+                {/* {formErrors.linkedin.length > 0 && (
                   <span className='errorMessage'>{formErrors.linkedin}</span>
-                )}
+                )} */}
               </div>
             </div>
           <div className='row'>
@@ -197,7 +198,7 @@ class ContactForm extends Component {
                   formErrors.message.length > 0 ? 'error' : null
                 }`}
                 onChange={this.handleChange}
-                placeholder='Message'
+                placeholder=' Message'
                 noValidate
                 id="fielddesign"
               ></textarea>
