@@ -1,4 +1,22 @@
-#footer {
+.footer {
   color:white;
-  height: 60px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.footer-wrapper{
+  bottom: 0;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-wrapper img {
+  margin: 30px;
+  height: 30px;
+  width: auto;
+}
+
+.mediumlogo {
+  filter: grayscale(1) invert(1);
 }
