@@ -114,19 +114,22 @@ class ContactForm extends Component {
     const { name, value } = e.target;
     let formErrors = { ...this.state.formErrors };
 
-    // switch (name) {
-    //   case 'name':
-    //     formErrors.name = value.length < 1 ? 'Please enter your name.' : '';
-    //     break;
-    //   case 'email':
-    //     formErrors.email = emailRegex.test(value) ? '' : 'Please enter a valid email address.';
-    //     break;
-    //   case 'message':
-    //     formErrors.message = value.length < 1 ? 'Please enter a message' : '';
-    //     break;
-    //   default:
-    //     break;
-    // }
+    switch (name) {
+      case 'name':
+        formErrors.name = value.length < 1 ? 'Please enter your name.' : '';
+        break;
+      case 'email':
+        formErrors.email = emailRegex.test(value) ? '' : 'Please enter a valid email address.';
+        break;
+      case 'message':
+        formErrors.message = value.length < 1 ? 'Please enter a message' : '';
+        break;
+      case 'linkedin': 
+        formErrors.linkedin = value.length < 1 ? 'Please enter a linkedin url' : '';
+        break;
+      default:
+        break;
+    }
     this.setState({ formErrors, [name]: value });
   };
 
@@ -153,12 +156,12 @@ class ContactForm extends Component {
               ></input>
               <label>Name:</label>
               {formErrors.name.length > 0 && (
-                <span className='errorMessage'>{formErrors.name}</span>
+                <p className='errorMessage'>{formErrors.name}</p>
               )}
             </div>
             <div className='emailfield'>
               <input
-                type='email'
+                type='text'
                 name='email'
                 value={this.state.email}
                 className={`form-control formInput ${formErrors.email.length > 0 ? 'error' : null}`}
@@ -168,7 +171,7 @@ class ContactForm extends Component {
               ></input>
               <label>Email:</label>
               {formErrors.email.length > 0 && (
-                <span className='errorMessage'>{formErrors.email}</span>
+                <p className='errorMessage'>{formErrors.email}</p>
               )}
             </div>
             <div className="linkedinfield">
@@ -183,9 +186,9 @@ class ContactForm extends Component {
                   id="fielddesign"
                 ></input>
                 <label>LinkedIn URL:</label>
-                {/* {formErrors.linkedin.length > 0 && (
-                  <span className='errorMessage'>{formErrors.linkedin}</span>
-                )} */}
+                {formErrors.linkedin.length > 0 && (
+                  <p className='errorMessage'>{formErrors.linkedin}</p>
+                )}
               </div>
             </div>
           <div className='row'>
@@ -203,7 +206,7 @@ class ContactForm extends Component {
                 id="fielddesign"
               ></textarea>
               {formErrors.message.length > 0 && (
-                <span className='errorMessage'>{formErrors.message}</span>
+                <p className='errorMessage' id='msgError'>{formErrors.message}</p>
               )}
             </div>
           </div>

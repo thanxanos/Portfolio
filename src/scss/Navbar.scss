@@ -1,16 +1,11 @@
 $mainColor: #071e3d; 
-.max-width{
-  max-width: 1300px;
-  padding: 0 80px;
-  margin: auto;
-}
 
 .navbar{
   position: fixed;
   width: 100%;
   padding: 15px 0;
   background: #f8f8f9;
-  z-index: 200;
+  z-index: 999;
 }
 
 .max-width{

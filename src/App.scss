@@ -17,30 +17,28 @@ $mainColor: #071e3d;
 body {
   background: $mainColor;
   color: #f8f8f9;
+  overflow-x: hidden;
 }
 
 #home {
-  // max-width: 1300px;
+  max-width: 100%;
   display: flexbox;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
   color: #fff;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 #home  {
   margin: 0 80px;
   padding: 0;
   flex: auto;
-  border: #071e3d dotted;
   flex-direction: column;
+  
 }
 
 
 #home .home-content{
-  margin-top: 70px;
   flex-direction: column;
 }
