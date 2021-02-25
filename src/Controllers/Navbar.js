@@ -13,7 +13,7 @@ function Navbar(){
           <div className="max-width">
             <div className="logo"><li><Link
               activeClass="active"
-              to="home"
+              to="about"
               spy={true}
               smooth={true}
               offset={-70}

@@ -2,7 +2,6 @@ import React from 'react';
 import './App.scss';
 import Navbar from './Controllers/Navbar';
 import GridController from './Controllers/GridController';
-import HomeController from './Controllers/HomeController';
 import AboutController from './Controllers/AboutController';
 import SkillsController from './Controllers/SkillsController';
 import BlogController from './Controllers/BlogController';
@@ -21,7 +20,6 @@ class App extends React.Component {
           <section id="home">
             <div className="wrapper">
               <div className="home-content">
-                <HomeController />
                 <AboutController />
                 <SkillsController />
                 <ProjectsController />
