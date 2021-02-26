@@ -28,6 +28,7 @@ body {
   justify-content: center;
   height: 100%;
   color: #fff;
+  
 }
 
 #home  {
@@ -35,12 +36,12 @@ body {
   padding: 0;
   flex: auto;
   flex-direction: column;
-  
 }
 
 
 #home .home-content{
   flex-direction: column;
+
 }
 .home-content {
  padding-top: 70px;
