@@ -1,16 +1,26 @@
-#about {
+.about-div {
+  padding-top: 80px;
   color: black;
   background-color: #f8f8f9;
   height: 700px;
-  padding: 1em 1em 1em;
   width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  text-align: right;
-  padding-right: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-img {
+.wrapper{
+
+  justify-content: space-evenly;
+}
+
+.logo-div{
+  
+}
+
+.logo-div svg {
   height: 500px;
   width: auto;
+
 }
+

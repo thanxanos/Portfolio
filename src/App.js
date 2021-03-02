@@ -17,10 +17,11 @@ class App extends React.Component {
     return (
         <div className="full-div">
           <Navbar />
+          <AboutController />
           <section id="home">
+          
             <div className="wrapper">
               <div className="home-content">
-                <AboutController />
                 <SkillsController />
                 <ProjectsController />
                 <BlogController />
