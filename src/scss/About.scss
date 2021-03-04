@@ -1,29 +1,36 @@
 .about-div {
-  padding-top: 80px;
   color: black;
   background-color: #f8f8f9;
-  height: 700px;
-  width: 100vw;
+  height: auto;
+  width: 100%;
+  margin: 0;
 }
 
 .about-wrapper{
+  margin: 0;
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+  width: 100%;
+  font-size: 65px;
+  text-align: center;
+}
+.small-t {
+  font-size: 55%;
+  color: rgb(95, 95, 95);
 }
 
 div.Typewriter{
-  font-size: 70px;
-  width: 700px;
-  height: 200px;
-}
-.logo-div{
-  margin-left: 0;
+  font-size: 65px;
+  width: 805px;
+  height: auto;
+  text-align: center;
 }
 
-.logo-div svg {
-  height: 700px;
-  width: auto;
 
+div.logo-div{
+  
+  // transform: translate(0,-50px);
 }
-

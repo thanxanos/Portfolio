@@ -1,15 +1,29 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../scss/Navbar.scss';
 import * as FaIcons from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import Resume from './ResumeController';
+import { useToast } from 'react-toastify';
 
 
 function Navbar(){
+  const [visible, setVisible] = useState(false);
   const [navbar, setNavbar] = useState(false);
   const showNavbar = () => setNavbar(!navbar);
+  useEffect(() => {
+    document.addEventListener("scroll", e => {
+      let scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 5){
+        setVisible(true)
+      } else {
+        setVisible(false)
+      }
+    })
+  }, [])
+
+
     return (
-        <nav className="navbar">
+        <nav className={ visible ? "navbar" : "navbar--hidden"}>
           <div className="max-width">
             <div className="logo"><li><Link
               activeClass="active"
@@ -76,7 +90,7 @@ function Navbar(){
             >Contact</Link></li>
             <li><Resume /></li>
             </ul>
-            <div className="menu-btn" onClick={showNavbar}>
+            <div className={visible ? "menu-btn" : "menu-btn--hidden"} onClick={showNavbar}>
              { navbar ? <FaIcons.FaTimes className='side-btn'/> : <FaIcons.FaBars className='side-btn'/>}
             </div>
           </div>

@@ -1,12 +1,26 @@
 $mainColor: #071e3d; 
 
 .navbar{
+  top: 0;
+  transition: top 0.3s;
   position: fixed;
   width: 100%;
   padding: 15px 0;
-  background: #f8f8f9;
-  z-index: 999;
+  background-color: #f8f8f9;
+  z-index: 2;
+  background-color:  rgba(248, 248, 249, 0.9);
+  backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+  
 }
+
+.navbar--hidden{
+  top: -200px;
+  position: fixed;
+  width: 100%;
+  transition: ease 0.3s;
+}
+
+
 
 .max-width{
   max-width: 1300px;
@@ -19,11 +33,16 @@ $mainColor: #071e3d;
   justify-content: space-between;
 }
 
+.logo {
+  list-style: none;
+}
+
 .navbar .logo a{
   cursor: pointer;
   color: $mainColor;
   font-size: 35px;
   font-weight: 600;
+  list-style: none;
 }
 
 .navbar .menu li a{
@@ -68,6 +87,10 @@ $mainColor: #071e3d;
   display: none;
 }
 
+.menu-btn--hidden {
+  left: -100px;
+}
+
 @media (max-width: 947px){
   .max-width{
     padding: 0 50px;
@@ -100,5 +123,17 @@ $mainColor: #071e3d;
     display: inline-block;
     margin: 20px;
     font-size: 25px;
+  }
+}
+
+@supports(-webkit-backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) or
+(backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) {
+.navbar-b.navbar-reduce {
+  transition: all 0.5s ease-in-out;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(248, 248, 249, 0.9);
+  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
   }
 }
