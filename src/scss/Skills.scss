@@ -1,9 +1,52 @@
 #skills{
+  padding-top: 30px;
   color: white;
-  height: 700px;
+  height: auto;
+  min-height: 700px;
 }
 
+.skills-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#skill-card{
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.header-div{
+  margin-bottom: 30px;
+}
+
+h2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #2ad4b5;
+}
+h2:before,
+h2:after {
+  content: '';
+  border-top: 2px #2ad4b5 solid;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+
+h2:after {
+  margin: 0 0 0 20px;
+}
+
+
 .lang-icon {
-  height: 200px;
+  margin: 50px;
+  margin-bottom: 30px;
+  height: 160px;
   width: auto;
 }

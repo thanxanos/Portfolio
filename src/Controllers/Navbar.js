@@ -43,7 +43,7 @@ function Navbar(){
               duration={500}
               onClick={() => setNavbar(false)}
               >Home</Link></li> */}
-            <li><Link
+            {/* <li><Link
               activeClass="active"
               to="about"
               spy={true}
@@ -51,7 +51,7 @@ function Navbar(){
               offset={-70}
               duration={500}
               onClick={() => setNavbar(false)}
-            >About</Link></li>
+            >About</Link></li> */}
             <li><Link
               activeClass="active"
               to="skills"
