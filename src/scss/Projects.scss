@@ -13,7 +13,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .project-card{
@@ -22,16 +21,39 @@
   height: 400px;
   width: 700px;
 }
+.project-card h2{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: #CD966B;
+}
+.project-card h2:before,
+.project-card h2:after {
+  content: '';
+  border-top: 2px #CD966B solid;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+
+.project-card h2:after {
+  margin: 0 0 0 20px;
+}
+
 .img-card{
+  border: 1px solid rgb(53, 53, 53);
   height: 400px;
   order: 1;
-  width: 700px;
+  min-width: 700px;
+
+}
+.img-card img {
+  clip-path: inset(5px 6px);
 }
 .text-card {
   order: 2;
   height: 400px;
-  width: 700px;
-
+  min-width: 700px;
+  
 }
 
 @media(max-width: 1399px){
