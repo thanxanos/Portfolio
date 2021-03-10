@@ -12,9 +12,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 10px;
   justify-content: center;
-  flex: 1;
+
 }
 
 .project-card{
@@ -24,28 +23,36 @@
   width: 700px;
 }
 .img-card{
+  height: 400px;
   order: 1;
-  height: auto;
-  background-color: aqua;
+  width: 700px;
 }
 .text-card {
   order: 2;
-  height: auto;
-  background-color: rgb(0, 110, 255);
+  height: 400px;
+  width: 700px;
+
 }
 
-@media(max-width: 1419px){
+@media(max-width: 1399px){
   #card-1{
-    order: -1;
-  }
-  #card-2{
     order: 0;
   }
-  #card-3{
-    order: 2;
+  #card-2{
+    order: -1;
   }
-  #card-4{
+  #card-3{
     order: 1;
   }
+  #card-4{
+    order: 2;
+  }
+  //this is input for the next project
+  // #card-5{
+  //   order: 3;
+  // }
+  // #card-6{
+  //   order: 4;
+  // }
 
 }

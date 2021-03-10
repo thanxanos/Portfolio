@@ -1,9 +1,9 @@
 import React from 'react';
 import '../scss/Footer.scss';
-import twitter from './../footerIcons/twitter.png';
-import github from './../footerIcons/github.png';
-import linkedin from './../footerIcons/linkedin.png';
-import medium from './../footerIcons/medium.png';
+import twitter from './../imgFolder/twitter.png';
+import github from './../imgFolder/github.png';
+import linkedin from './../imgFolder/linkedin.png';
+import medium from './../imgFolder/medium.png';
 
 class FooterController extends React.Component {
   render(){
