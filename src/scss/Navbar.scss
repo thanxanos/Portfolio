@@ -8,9 +8,10 @@ $mainColor: #071e3d;
   padding: 15px 0;
   background-color: #f8f8f9;
   z-index: 2;
-  background-color:  rgba(248, 248, 249, 0.9);
+  box-shadow: 0 0.1px 12px rgb(49, 49, 49);
+
+  background-color:  rgba(248, 248, 249, 0.8);
   backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
-  
 }
 
 .navbar--hidden{
