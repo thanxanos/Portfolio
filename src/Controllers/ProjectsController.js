@@ -32,6 +32,7 @@ class ProjectsController extends React.Component {
           <div className="project-card"id="card-4">
             <div className="img-card">
             <p><img src={knightQ} alt="knightQ"></img></p>
+            <h1 className="text-hover">Ruby on Rails</h1>
             </div>
           </div>
           {/* This is input for the next project */}
