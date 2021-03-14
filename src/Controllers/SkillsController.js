@@ -34,7 +34,7 @@ class SkillsController extends React.Component {
           {/* <FaIcons.FaSwift className="lang-icon"/>*/}
           <div className="" id="skill-card">
             <FaIcons.FaDatabase className="lang-icon"/>
-            <p>SQL,SQlite</p>
+            <p>SQL, SQlite</p>
           </div>
           <div className="" id="skill-card">
             <IoIcons.IoLogoHtml5 className="lang-icon"/> 
