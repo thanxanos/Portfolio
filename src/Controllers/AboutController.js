@@ -20,7 +20,7 @@ class AboutController extends React.Component {
                 onInit={(typewriter) => 
                 typewriter
                 .typeString('I am ')
-                .typeString(' a<span style="color: #278ea5;"> Fullstack Engineer</span>.')
+                .typeString(' a<span style="color: #278ea5;" font-family="font-family: "Montserrat", sans-serif;"> Fullstack Engineer</span>.')
                 .pauseFor(900)
                 .deleteChars(21)
                 .typeString(' a<span style="color: #CD966B;"> Designer</span>.')

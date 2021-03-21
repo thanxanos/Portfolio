@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 .about-div {
   color: black;
   background-color: #f8f8f9;
   height: auto;
   width: 100%;
   margin: 0;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .about-wrapper{
@@ -18,11 +23,13 @@
   text-align: center;
 }
 .small-t {
+  font-family: 'Montserrat', sans-serif;
   font-size: 55%;
   color: rgb(95, 95, 95);
 }
 
 div.Typewriter{
+
   font-size: 60px;
   width: 805px;
   height: auto;

@@ -2,6 +2,8 @@ import React from 'react';
 import '../scss/Projects.scss';
 import doubleC from './../imgFolder/double_c.png';
 import knightQ from './../imgFolder/knight_quest.png';
+import * as AiIcons from 'react-icons/ai';
+import * as DiIcons from 'react-icons/di';
 
 class ProjectsController extends React.Component {
   render(){
@@ -11,14 +13,23 @@ class ProjectsController extends React.Component {
           <div className="project-card">
             <div className="img-card" id="card-1">
               <p><img src={doubleC} alt="doublC"></img></p>
-              <h1 className="text-hover">Ruby on Rails / ReactJS</h1>
+              <div className="text-hover">
+                <p className="p-text-hover">
+                  <a title="video" href="https://youtu.be/-9TG-lpDn6c"><AiIcons.AiOutlinePlayCircle className="link-class" /></a>
+                  <a title="git" href="https://github.com/zoexanos/Decoder-Frontend"> <AiIcons.AiFillGithub className="link-class" /></a>
+                  <a title="live" href="https://double-cryptography.herokuapp.com/"> <DiIcons.DiHeroku className="link-class" /></a></p>
+                </div>
             </div>
           </div>
           <div className="project-card" id="card-2">
             <div className="text-card">
               <h2>Double Cryptography</h2>
-              <p>Ruby back end, React hooks front end, SVG Files, grep??, MVC, API</p>
-              <p><a className="link-class" href="https://youtu.be/-9TG-lpDn6c">video demo</a> <a className="link-class" href="https://github.com/zoexanos/Decoder-Frontend">github</a> <a className="link-class" href="https://double-cryptography.herokuapp.com/">live site</a></p>
+              <h3>Ruby on Rails / ReactJS</h3>
+              <div className="mobile-text" >
+                <a title="video" href="https://youtu.be/-9TG-lpDn6c"><AiIcons.AiOutlinePlayCircle className="mobile-link" /></a>
+                <a title="git" href="https://github.com/zoexanos/Decoder-Frontend"> <AiIcons.AiFillGithub className="mobile-link" /></a>
+                <a title="live" href="https://double-cryptography.herokuapp.com/"> <DiIcons.DiHeroku className="mobile-link" /></a>
+              </div>
             </div>
           </div>
           <div className="project-card" id="card-3">
@@ -26,13 +37,19 @@ class ProjectsController extends React.Component {
               <h2>Knight Quest</h2>
               <h3>Ruby on Rails</h3>
               <p>MVC, CRUD</p>
-              <p><a className="link-class" href="https://youtu.be/fnro7p4HKyM">video demo</a> <a className="link-class" href="https://github.com/zoexanos/Knight-Quest">github</a></p>
+              <p className="mobile-text">
+                <a href="https://youtu.be/fnro7p4HKyM"><AiIcons.AiOutlinePlayCircle className="mobile-link" /></a> <a href="https://github.com/zoexanos/Knight-Quest"> <AiIcons.AiFillGithub className="mobile-link" /></a>
+                </p>
             </div>
           </div>
           <div className="project-card"id="card-4">
             <div className="img-card">
             <p><img src={knightQ} alt="knightQ"></img></p>
-            <h1 className="text-hover">Ruby on Rails</h1>
+              <div className="text-hover">
+                <p className="p-text-hover">
+                <a href="https://youtu.be/fnro7p4HKyM"><AiIcons.AiOutlinePlayCircle className="link-class" /></a> <a href="https://github.com/zoexanos/Knight-Quest"> <AiIcons.AiFillGithub className="link-class" /></a>
+                </p>
+              </div>
             </div>
           </div>
           {/* This is input for the next project */}
