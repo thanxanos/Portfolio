@@ -3,7 +3,7 @@ import '../scss/Navbar.scss';
 import * as FaIcons from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import Resume from './ResumeController';
-import { useToast } from 'react-toastify';
+// import { useToast } from 'react-toastify';
 
 
 function Navbar(){

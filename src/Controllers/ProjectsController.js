@@ -25,6 +25,8 @@ class ProjectsController extends React.Component {
             <div className="text-card">
               <h2>Double Cryptography</h2>
               <h3>Ruby on Rails / ReactJS</h3>
+              <p>Browser-based cryptography game inspired by Bioshock and Film Noir. 
+                Ruby on Rails for the backend</p>
               <div className="mobile-text" >
                 <a title="video" href="https://youtu.be/-9TG-lpDn6c"><AiIcons.AiOutlinePlayCircle className="mobile-link" /></a>
                 <a title="git" href="https://github.com/zoexanos/Decoder-Frontend"> <AiIcons.AiFillGithub className="mobile-link" /></a>

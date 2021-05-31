@@ -1,6 +1,6 @@
 
 #contact {
-  height: 550px;
+  min-height: 575px;
   display: flex;
   justify-content: center;
 }
@@ -11,8 +11,7 @@
   font-size: 35px;
   color: white;
   text-align: center;
-  margin-bottom: 30px;
-
+  margin-bottom: 20px;
 }
 
 .contactwrapper {
@@ -40,7 +39,6 @@ input, label {
 
 .row {
   display: block;
-
 }
 
 .namefield {
@@ -150,5 +148,5 @@ p.errorMessage:focus {
 }
 .submit-btn:hover {
   border: 2px solid #CD966B;
-  box-shadow: inset 302px 0 0 0 #CD966B;
+  box-shadow: inset 305px 0 0 0 #CD966B;
 }

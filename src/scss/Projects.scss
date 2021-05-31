@@ -73,6 +73,16 @@
   visibility: hidden;
 }
 
+svg.mobile-link:hover {
+  -webkit-transform: scale(1.10);
+  transform: scale(1.10);
+}
+
+.img-card:hover svg:hover {
+  -webkit-transform: scale(1.10);
+  transform: scale(1.10);
+}
+
 .img-card:hover .text-hover{
   visibility: visible;
   opacity: 1;
@@ -115,7 +125,7 @@ h3 {
     height: 100px;
     width: auto;
     margin: 15px;
-  }
+  } 
   #card-1{
     order: 0;
   }
