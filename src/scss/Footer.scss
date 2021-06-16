@@ -11,11 +11,17 @@
   width: 100%;
 }
 
+.footer-wrapper a {
+  height: 60px;
+  width: 30px;
+}
+
 .footer-wrapper img {
-  margin: 10px 30px 30px 30px;
+  margin-top: 13px;
   height: 30px;
   width: auto;
   transition: 0.3s;
+  padding: 0 30px 0 30px;
 }
 
 .footer-wrapper img:hover {
