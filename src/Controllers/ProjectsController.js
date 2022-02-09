@@ -25,8 +25,9 @@ class ProjectsController extends React.Component {
             <div className="text-card">
               <h2>Double Cryptography</h2>
               <h3>Ruby on Rails / ReactJS</h3>
-              <p>Browser-based cryptography game inspired by Bioshock and Film Noir. 
-                Ruby on Rails for the backend</p>
+              <p>I created a browser-based game using Ruby on Rails for the back end and React for the front end. Users can log in to solve interactive puzzles with the help of a detective.</p>
+              <p>For this project, I designed and wrote front end using React and React-konva. I implemented RESTful API to manage game state and persist game data. I also created all game graphics through Figma and used GSAP to manage animations
+</p>
               <div className="mobile-text" >
                 <a title="video" href="https://youtu.be/-9TG-lpDn6c"><AiIcons.AiOutlinePlayCircle className="mobile-link" /></a>
                 <a title="git" href="https://github.com/zoexanos/Decoder-Frontend"> <AiIcons.AiFillGithub className="mobile-link" /></a>
@@ -38,7 +39,8 @@ class ProjectsController extends React.Component {
             <div className="text-card">
               <h2>Knight Quest</h2>
               <h3>Ruby on Rails</h3>
-              <p>MVC, CRUD</p>
+              <p>This was a paired project CLI game created using Ruby on Rails and SQL. Users can choose a knight to journey with or create a new one. Using a classic quest game aesthetic and style, users can progress through the game and solve puzzles with their knight of choice.</p>
+              <p>The major goal of this project was to push what we knew code can do as well as explore our creative side.</p>
               <p className="mobile-text">
                 <a href="https://youtu.be/fnro7p4HKyM"><AiIcons.AiOutlinePlayCircle className="mobile-link" /></a> <a href="https://github.com/zoexanos/Knight-Quest"> <AiIcons.AiFillGithub className="mobile-link" /></a>
                 </p>
