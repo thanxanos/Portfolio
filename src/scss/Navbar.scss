@@ -6,7 +6,7 @@ $mainColor: #071e3d;
   transition: top 0.3s;
   position: fixed;
   width: 100%;
-  padding: 15px 0;
+  padding: 16px 0;
   background-color: #f8f8f9;
   z-index: 2;
   box-shadow: 0 0.1px 12px rgb(49, 49, 49);
@@ -25,6 +25,7 @@ $mainColor: #071e3d;
 
 
 .max-width{
+  height: 40px;
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
