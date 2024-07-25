@@ -1,5 +1,13 @@
-// $mainColor: #black;
-$mainColor: #071e3d; 
+:root{
+  --mainColor: #071e3d; 
+  --teal: #2AD4B5;
+  --smokyBlue: #278EA5;
+  --brown: #CD966B;
+  --coldWhite: #F8F8F9;
+  --creamWhite: #FCFCFC;
+  --highlight: #6DDCF4;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Krub:wght@200;400&family=Rubik&display=swap');
 
@@ -19,7 +27,7 @@ $mainColor: #071e3d;
 }
 
 body {
-  background: $mainColor;
+  background: var(--mainColor);
   color: #f8f8f9;
 }
 

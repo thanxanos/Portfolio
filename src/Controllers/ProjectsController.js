@@ -12,7 +12,7 @@ class ProjectsController extends React.Component {
         <div className="projects-wrapper">
           <div className="project-card">
             <div className="img-card" id="card-1">
-              <p><img src={doubleC} alt="doublC"></img></p>
+              {/* <p><img src={doubleC} alt="doublC"></img></p> */}
               <div className="text-hover">
                 <p className="p-text-hover">
                   <a title="video" href="https://youtu.be/-9TG-lpDn6c"><AiIcons.AiOutlinePlayCircle className="link-class" /></a>
@@ -24,15 +24,17 @@ class ProjectsController extends React.Component {
           <div className="project-card" id="card-2">
             <div className="text-card">
               <h2>Double Cryptography</h2>
-              <h3>Ruby on Rails / ReactJS</h3>
-              <p>I created a browser-based game using Ruby on Rails for the back end and React for the front end. Users can log in to solve interactive puzzles with the help of a detective.</p>
+              <div className='button-div'><button className='lang-tag'>ruby on rails</button><button className='lang-tag'>react.js</button></div>
+              <p><img className='desc-image' src={doubleC} alt="doublC"></img></p>
+              {/* <p>I created a browser-based game using Ruby on Rails for the back end and React for the front end. Users can log in to solve interactive puzzles with the help of a detective.</p>
               <p>For this project, I designed and wrote front end using React and React-konva. I implemented RESTful API to manage game state and persist game data. I also created all game graphics through Figma and used GSAP to manage animations
 </p>
+              
               <div className="mobile-text" >
                 <a title="video" href="https://youtu.be/-9TG-lpDn6c"><AiIcons.AiOutlinePlayCircle className="mobile-link" /></a>
                 <a title="git" href="https://github.com/zoexanos/Decoder-Frontend"> <AiIcons.AiFillGithub className="mobile-link" /></a>
                 <a title="live" href="https://double-cryptography.herokuapp.com/"> <DiIcons.DiHeroku className="mobile-link" /></a>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="project-card" id="card-3">
