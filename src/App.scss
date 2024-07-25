@@ -10,28 +10,30 @@ $mainColor: #071e3d;
   text-decoration: none;
   font-family: 'Krub', sans-serif;
   // font-family: 'Rubik', sans-serif;
-
+  overflow-x: clip;
 }
 
+.full-div {
+  display: flex;
+  flex-direction: column;
+}
 
 body {
   background: $mainColor;
   color: #f8f8f9;
-  overflow-x: hidden;
 }
 
 #home {
-  max-width: 100%;
-  display: flexbox;
-  flex-direction: column;
+  max-width: 100vw;
+  // display: flexbox;
+  // flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
   color: #fff;
-  
 }
 
-#home  {
+#home {
   margin: 0 80px;
   padding: 0;
   flex: auto;

@@ -18,7 +18,6 @@ class App extends React.Component {
           <Navbar />
           <AboutController />
           <section id="home">
-          
             <div className="wrapper">
               <div className="home-content">
                 <SummaryController />

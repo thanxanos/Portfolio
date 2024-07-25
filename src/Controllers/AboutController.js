@@ -2,6 +2,9 @@ import React from 'react';
 import '../scss/About.scss';
 import {ReactComponent as Logo} from '../docs/portfolio_pic3.svg'
 import Typewriter from 'typewriter-effect';
+import { Link } from 'react-scroll';
+import { FaArrowCircleDown } from "react-icons/fa";
+
 
 class AboutController extends React.Component {
   render(){
@@ -19,18 +22,26 @@ class AboutController extends React.Component {
                 }}
                 onInit={(typewriter) => 
                 typewriter
-                .typeString('I am ')
-                .typeString(' a<span style="color: #278ea5;" font-family="font-family: "Montserrat", sans-serif;"> Fullstack Engineer</span>.')
+                .typeString('I am a ')
+                .typeString('<span style="color: #2ad4b5;" font-family="font-family: "Montserrat", sans-serif;"> Software Engineer</span>.')
                 .pauseFor(900)
-                .deleteChars(21)
-                .typeString(' a<span style="color: #CD966B;"> Designer</span>.')
+                .deleteChars(20)
+                .typeString('<span style="color: #CD966B;"> UX Designer</span>.')
                 .pauseFor(900)
-                .deleteChars(13)
-                .typeString(' <span style="color: #2ad4b5;">Passionate</span>.')
-                .pauseFor(2000)
+                // .deleteChars(15)
+                // .typeString(' <span style="color: #2ad4b5;">Passionate</span>.')
+                // .pauseFor(2000)
                 .deleteAll()
                 .start()}
               />
+            <Link
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            ><FaArrowCircleDown className='arrowcircledown' /></Link>
             </div>
             <div className="logo-div">
               <Logo />
