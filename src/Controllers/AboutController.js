@@ -18,12 +18,12 @@ class AboutController extends React.Component {
                 options={{
                   autoStart: true,
                   loop: true,
-                  delay: 60
+                  delay: 40
                 }}
                 onInit={(typewriter) => 
                 typewriter
                 .typeString('I am a ')
-                .typeString('<span style="color: #2ad4b5;" font-family="font-family: "Montserrat", sans-serif;"> Software Engineer</span>.')
+                .typeString('<span style="color: #2ad4b5;"> Software Engineer</span>.')
                 .pauseFor(900)
                 .deleteChars(20)
                 .typeString('<span style="color: #CD966B;"> UX Designer</span>.')

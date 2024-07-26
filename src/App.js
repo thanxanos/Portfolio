@@ -6,6 +6,7 @@ import AboutController from './Controllers/AboutController';
 import SkillsController from './Controllers/SkillsController';
 import BlogController from './Controllers/BlogController';
 import ProjectsController from './Controllers/ProjectsController';
+import ProjectsControllerNew from './Controllers/ProjectControllerNew';
 import ContactController from './Controllers/ContactController';
 import FooterController from './Controllers/FooterController';
 import SummaryController from './Controllers/SummaryController';
@@ -22,7 +23,7 @@ class App extends React.Component {
               <div className="home-content">
                 <SummaryController />
                 <SkillsController />
-                <ProjectsController />
+                <ProjectsControllerNew />
                 <BlogController />
                 <ContactController />
               </div>

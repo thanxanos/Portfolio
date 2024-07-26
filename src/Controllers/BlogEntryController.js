@@ -22,7 +22,7 @@ const BlogEntry = props => {
       
           <button
             type='button'
-            className='btn'
+            className='blog-btn'
             >Read More</button>
       
         </a>

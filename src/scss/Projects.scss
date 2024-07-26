@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 #projects{
-  padding-top: 10px;
+  padding: 24px;
   background-color: rgb(252, 252, 252);
   color: black;
   height: auto;
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
+
 }
 
 .projects-wrapper{
@@ -16,17 +14,20 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 32px;
+  border-radius: 10px;
 }
 
 .desc-image {
-  margin-top: 16px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 8px;
   border-radius: 10px;
 }
 
 .project-card{
-  height: 350px;
-  width: 700px;
-  margin: 10px;
+  height: 480px;
+  width: 530px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -50,26 +51,23 @@
   margin: 0 0 0 20px;
 }
 
-
-
-
-.img-card{
+.project-card{
   // border: 1px solid rgb(53, 53, 53);
-  height: 350px;
+  height: auto;
   order: 1;
-  min-width: 700px;
+  max-width: 630px;
   position: relative;
 }
 .text-hover{
-  height: 350px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 100px;
   position: absolute;
   font-size: 40px;
-  top: 0;
+  top: 116px;
   bottom: 0;
   left: 0;
   right: 0;
+  border-radius: 10px;
   text-align: center;
   vertical-align: middle;
   line-height: 450px;
@@ -95,30 +93,21 @@
   border-radius: 10px;
 }
 
-.mobile-text{
-  visibility: hidden;
-}
 
-svg.mobile-link:hover {
+
+.desc-image:hover svg:hover {
   -webkit-transform: scale(1.10);
   transform: scale(1.10);
 }
 
-.img-card:hover svg:hover {
-  -webkit-transform: scale(1.10);
-  transform: scale(1.10);
-}
-
-.img-card:hover .text-hover{
+.desc-image:hover .text-hover{
   visibility: visible;
   opacity: 1;
 }
 
 .text-card {
-  order: 2;
   font-size: 20px;
   height: auto;
-  min-width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,43 +125,43 @@ svg.mobile-link:hover {
   margin: 15px;
 }
 
-@media(max-width: 1399px){
-  .text-hover{
-    visibility: hidden;
-  }
-  .img-card:hover .text-hover{
-    visibility: hidden;
-    opacity: 1;
-  }
-  .mobile-text{
-    text-align: center;
-    color: black;
-    visibility: visible;
-  }
-  .mobile-link{
-    color: black;
-    height: 100px;
-    width: auto;
-    margin: 15px;
-  } 
-  #card-1{
-    order: 0;
-  }
-  #card-2{
-    order: -1;
-  }
-  #card-3{
-    order: 1;
-  }
-  #card-4{
-    order: 2;
-  }
-  //this is input for the next project
-  // #card-5{
-  //   order: 3;
-  // }
-  // #card-6{
-  //   order: 4;
-  // }
+// @media(max-width: 1399px){
+//   .text-hover{
+//     visibility: hidden;
+//   }
+//   .img-card:hover .text-hover{
+//     visibility: hidden;
+//     opacity: 1;
+//   }
+//   .mobile-text{
+//     text-align: center;
+//     color: black;
+//     visibility: visible;
+//   }
+//   .mobile-link{
+//     color: black;
+//     height: 100px;
+//     width: auto;
+//     margin: 15px;
+//   } 
+//   #card-1{
+//     order: 0;
+//   }
+//   #card-2{
+//     order: -1;
+//   }
+//   #card-3{
+//     order: 1;
+//   }
+//   #card-4{
+//     order: 2;
+//   }
+//   //this is input for the next project
+//   // #card-5{
+//   //   order: 3;
+//   // }
+//   // #card-6{
+//   //   order: 4;
+//   // }
 
-}
+//}
