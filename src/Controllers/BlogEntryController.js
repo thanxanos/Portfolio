@@ -13,7 +13,7 @@ const BlogEntry = props => {
       <h1 className="blog-title">{props.entry.title}</h1>
       <div className="blog-description">
         <div className="blog-txt">
-        {props.entry.description.slice(1,150).replace(regex, '')}...
+        {props.entry.description.slice(1,200).replace(regex, '')}...
         </div>
         <a 
           target="_blank"
@@ -23,7 +23,7 @@ const BlogEntry = props => {
           <button
             type='button'
             className='blog-btn'
-            >Read More</button>
+            ><b>Read More</b></button>
       
         </a>
       </div>

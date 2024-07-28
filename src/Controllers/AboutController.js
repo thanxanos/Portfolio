@@ -18,7 +18,7 @@ class AboutController extends React.Component {
                 options={{
                   autoStart: true,
                   loop: true,
-                  delay: 40
+                  delay: 70
                 }}
                 onInit={(typewriter) => 
                 typewriter

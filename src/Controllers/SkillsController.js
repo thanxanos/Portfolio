@@ -5,6 +5,7 @@ import * as IoIcons from 'react-icons/io';
 import * as SiIcons from 'react-icons/si';
 import * as FiIcons from 'react-icons/fi';
 import * as AiIcons from 'react-icons/ai';
+
 import '../scss/Skills.scss';
 
 class SkillsController extends React.Component {
@@ -15,10 +16,6 @@ class SkillsController extends React.Component {
             <h2>Skills</h2>
           </div>
         <div className="skills-wrapper">
-          <div className="" id="skill-card">
-            <DiIcons.DiRuby className="lang-icon"/> 
-            <p>Ruby</p>
-          </div>
           <div className="" id="skill-card">
             <SiIcons.SiJavascript className="lang-icon" /> 
             <p>Javascript</p>
@@ -31,7 +28,14 @@ class SkillsController extends React.Component {
             <FaIcons.FaPython className="lang-icon"/>
             <p>Python</p>
           </div>
-          {/* <FaIcons.FaSwift className="lang-icon"/>*/}
+          <div className="" id="skill-card">
+            <FaIcons.FaJava className="lang-icon"/> 
+            <p>Java</p>
+          </div>
+          <div className="" id="skill-card">
+            <DiIcons.DiRuby className="lang-icon"/> 
+            <p>Ruby</p>
+          </div>
           <div className="" id="skill-card">
             <FaIcons.FaDatabase className="lang-icon"/>
             <p>SQL, SQlite</p>
@@ -59,10 +63,6 @@ class SkillsController extends React.Component {
           <div className="" id="skill-card">
             <DiIcons.DiPhotoshop className="lang-icon"/>
             <p>Adobe Photoshop</p>
-          </div>
-          <div className="" id="skill-card">
-            <DiIcons.DiNpm className="lang-icon"/>
-            <p>npm</p>
           </div>
         </div>
       </div>
