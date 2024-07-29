@@ -138,8 +138,11 @@ class ContactForm extends Component {
 
     return (
       <div id="contact">
+        <div className="contactabout">
+          <h1>Contact</h1>
+          <p>hehehehehe</p>
+        </div>
         <div className="contactwrapper">
-        <h1>Contact</h1>
         <form id='contact-form' onSubmit={this.handleSubmit} noValidate>
           <div className='row'>
             <div className='namefield'>
