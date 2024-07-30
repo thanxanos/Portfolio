@@ -1,5 +1,6 @@
 import React from 'react';
 import '../scss/About.scss';
+import groupShape from './../imgFolder/group_shapes.png'
 import {ReactComponent as Logo} from '../docs/portfolio_pic3.svg'
 import Typewriter from 'typewriter-effect';
 import { Link } from 'react-scroll';
@@ -10,6 +11,7 @@ class AboutController extends React.Component {
   render(){
     return(
       <div className="about-div" id="about">
+        <img className="aboutimg" src={groupShape} />
         <div className="about-wrapper">
             <div className="text-div">
               <p><span className="small-t">my name is </span>Zoe Xanos</p>

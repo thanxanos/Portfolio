@@ -6,7 +6,8 @@
   justify-content: space-around;
 }
 
-.contactwrapper h1 {
+.contactabout h1 {
+  margin-top: 120px;
   margin-bottom: 20px;
   font-size: 35px;
   color: white;
@@ -148,4 +149,11 @@ p.errorMessage:focus {
 .submit-btn:hover {
   border: 2px solid #CD966B;
   box-shadow: inset 305px 0 0 0 #CD966B;
+}
+
+.contactimg {
+  position: absolute;
+  left: 3%;
+  margin-top: -20px;
+  object-fit: contain;
 }

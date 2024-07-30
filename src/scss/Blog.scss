@@ -9,7 +9,7 @@
 }
 
 .title h1 {
-  margin: 32px 0 32px 0px;
+  margin: 8px 0 32px 0px;
   font-family: 'Roboto Slab', serif;
   font-size: 35px;
   width: 1000px;
@@ -19,4 +19,10 @@
 
 span {
   font-weight: 400;
+}
+
+@media (max-width:1300px) {
+  #blog{
+    margin: 0 10px;
+  }
 }

@@ -99,3 +99,16 @@ a :hover{
   font-weight: 300;
   margin-bottom: 32px;
 }
+
+@media (max-width: 375px) {
+  
+  #blog {
+    margin: 0;
+  }
+
+  .title h1 {
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+}

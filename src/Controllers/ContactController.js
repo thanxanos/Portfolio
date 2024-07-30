@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../scss/Contact.scss';
+import groupShape from './../imgFolder/group_shapes.png'
+import atoms from './../imgFolder/atoms.png'
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -67,7 +69,6 @@ class ContactForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-
     if (formValid(this.state)) {
       // Handle form validation success
       const { name, email, linkedin, message } = this.state;
@@ -220,6 +221,7 @@ class ContactForm extends Component {
 
         <ToastContainer />
         </div>
+        <img className="contactimg" src={atoms} />
       </div>
     );
   }
