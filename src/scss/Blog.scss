@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
 #blog{
   color: black;
   // background-color: #CD966B;
@@ -12,7 +13,7 @@
   margin: 8px 0 32px 0px;
   font-family: 'Roboto Slab', serif;
   font-size: 35px;
-  width: 1000px;
+  width: 100vw;
   color: white;
   text-align: center;
 }
@@ -21,7 +22,7 @@ span {
   font-weight: 400;
 }
 
-@media (max-width:1300px) {
+@media (max-width:1440px) {
   #blog{
     margin: 0 10px;
   }

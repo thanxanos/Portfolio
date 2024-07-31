@@ -13,7 +13,7 @@ class SkillsController extends React.Component {
     return(
       <div id="skills">
         <div className="header-div">
-            <h2>Skills</h2>
+            <h2>skills</h2>
           </div>
         <div className="skills-wrapper">
           <div className="" id="skill-card">
