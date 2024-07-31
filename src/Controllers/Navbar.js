@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react';
 import '../scss/Navbar.scss';
 import * as FaIcons from 'react-icons/fa';
 import { Link } from 'react-scroll';
-import Resume from './ResumeController';
+import smallShape from './../imgFolder/small_shape.png'
+// import Resume from './ResumeController';
 // import { useToast } from 'react-toastify';
 
 
@@ -60,7 +61,7 @@ function Navbar(){
               offset={-70}
               duration={500}
               onClick={() => setNavbar(false)}
-            >Skills</Link></li>
+            >SKILLS</Link></li>
             <li><Link
               activeClass="active"
               to="projects"
@@ -69,7 +70,7 @@ function Navbar(){
               offset={-70}
               duration={500}
               onClick={() => setNavbar(false)}
-            >Projects</Link></li>
+            >PORTFOLIO</Link></li>
             <li><Link
               activeClass="active"
               to="blog"
@@ -78,7 +79,7 @@ function Navbar(){
               offset={-70}
               duration={500}
               onClick={() => setNavbar(false)}
-            >Blog</Link></li>
+            >BLOG</Link></li>
             <li><Link
               activeClass="active"
               to="contact"
@@ -87,8 +88,10 @@ function Navbar(){
               offset={-70}
               duration={500}
               onClick={() => setNavbar(false)}
-            >Contact</Link></li>
-            <li><Resume /></li>
+            >CONTACT</Link></li>
+            {/* <li><img className='navimg' src={smallShape} /></li> */}
+            <li id="star">✦</li>
+            {/* <li><Resume /></li> */}
             </ul>
             <div className={visible ? "menu-btn" : "menu-btn--hidden"} onClick={showNavbar}>
              { navbar ? <FaIcons.FaTimes className='side-btn'/> : <FaIcons.FaBars className='side-btn'/>}

@@ -21,7 +21,10 @@ $mainColor: #071e3d;
 
 }
 
-
+#star {
+  padding-left: 20px;
+  color: var(--brown);
+}
 
 .max-width{
   height: 38px;
@@ -95,6 +98,10 @@ $mainColor: #071e3d;
 }
 
 @media (max-width: 947px){
+  #star {
+    padding-left: 0px;
+  }
+
   .max-width{
     padding: 0 50px;
   }

@@ -8,7 +8,7 @@ class Resume extends React.Component{
 
   render() {
     return (
-      <a onClick={this.onResumeClick}>Resume</a>
+      <a onClick={this.onResumeClick}>RESUME</a>
     )
   }
 }

@@ -27,7 +27,7 @@ class AboutController extends React.Component {
                 .typeString('I am a ')
                 .typeString('<span style="color: #2ad4b5;"> Software Engineer</span>')
                 .pauseFor(900)
-                .deleteChars(20)
+                .deleteChars(18)
                 .typeString('<span style="color: #CD966B;"> UX Designer</span>')
                 .pauseFor(900)
                 // .deleteChars(15)

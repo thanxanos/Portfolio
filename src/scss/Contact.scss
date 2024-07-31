@@ -27,7 +27,7 @@ input, label {
 
 #contact-form{
   flex-flow: 2;
-  text-align: center;
+  text-align: left;
   position: relative;
 }
 
@@ -153,7 +153,7 @@ p.errorMessage:focus {
 
 .contactimg {
   position: absolute;
-  left: 3%;
-  margin-top: -20px;
+  left: 2%;
+  margin-top: -24px;
   object-fit: contain;
 }
