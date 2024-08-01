@@ -31,7 +31,7 @@ function Navbar(){
               to="about"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-72}
               duration={500}
               >Zoe Xanos</Link></li></div>
             <ul className={ navbar ? 'menu active': 'menu'}>
@@ -58,7 +58,7 @@ function Navbar(){
               to="skills"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-72}
               duration={500}
               onClick={() => setNavbar(false)}
             >SKILLS</Link></li>
@@ -67,16 +67,16 @@ function Navbar(){
               to="projects"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-72}
               duration={500}
               onClick={() => setNavbar(false)}
             >PORTFOLIO</Link></li>
             <li><Link
               activeClass="active"
-              to="blog"
+              to="blog-buffer"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-72}
               duration={500}
               onClick={() => setNavbar(false)}
             >BLOG</Link></li>
@@ -85,12 +85,12 @@ function Navbar(){
               to="contact"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-72}
               duration={500}
               onClick={() => setNavbar(false)}
             >CONTACT</Link></li>
             {/* <li><img className='navimg' src={smallShape} /></li> */}
-            <li id="star">✦</li>
+            <li className="star">✦</li>
             {/* <li><Resume /></li> */}
             </ul>
             <div className={visible ? "menu-btn" : "menu-btn--hidden"} onClick={showNavbar}>

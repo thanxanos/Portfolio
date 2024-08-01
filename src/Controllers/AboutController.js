@@ -41,7 +41,7 @@ class AboutController extends React.Component {
               to="skills"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-72}
               duration={500}
             ><FaArrowCircleDown className='arrowcircledown' /></Link>
             </div>

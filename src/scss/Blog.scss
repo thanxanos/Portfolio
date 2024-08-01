@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
-#blog{
-  color: black;
-  // background-color: #CD966B;
+
+#blogwrapper{
+  color: #333333;
   display: flex;
-  margin: 0 80px;
+  margin: 0 5rem;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 7rem;
 }
 
 .title h1 {
-  margin: 8px 0 32px 0px;
+  margin: 0.5rem 0 2.5rem 0px;
   font-family: 'Roboto Slab', serif;
   font-size: 35px;
   width: 100vw;
@@ -23,7 +24,15 @@ span {
 }
 
 @media (max-width:1440px) {
-  #blog{
+  #blogwrapper{
     margin: 0 10px;
   }
+}
+
+div.blog-buffer {
+  content:'';
+  border-top: 110px solid var(--creamWhite);
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  padding-top: 24px;
 }

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import '../scss/Contact.scss';
-import groupShape from './../imgFolder/group_shapes.png'
 import atoms from './../imgFolder/atoms.png'
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import ContactLinkController from './ContactLinkController';
 
 // Email validation
 const emailRegex = RegExp(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
@@ -81,16 +81,18 @@ class ContactForm extends Component {
         message: message,
       };
 
-      emailjs.send('service_lcifpz7', 'template_j778nse', templateParams, 'user_nx9OxTUTWaKUrTuYLyr1y');
+      emailjs.send('service_le68ywd', 'template_4stqf2u', templateParams, 'SZkg0T4Jj370emhQF');
 
-      console.log(`
-        --SUBMITTING--
-        Name: ${name}
-        Email: ${email}
-        LinkedIn: ${linkedin}
-        Message: ${message}
-      `);
+      // console.log(`
+      //   --SUBMITTING--
+      //   Name: ${name}
+      //   Email: ${email}
+      //   LinkedIn: ${linkedin}
+      //   Message: ${message}
+      // `);
       
+      console.log(JSON.stringify(templateParams))
+
       this.toastifySuccess();
       this.resetForm();
     } else {
@@ -141,7 +143,8 @@ class ContactForm extends Component {
       <div id="contact">
         <div className="contactabout">
           <h1>Contact</h1>
-          <p>hehehehehe</p>
+          <p><span className="contact-star">✦</span> Have a question? Let's connect! <span className="contact-star">✦</span></p>
+          <ContactLinkController />
         </div>
         <div className="contactwrapper">
         <form id='contact-form' onSubmit={this.handleSubmit} noValidate>
@@ -152,11 +155,10 @@ class ContactForm extends Component {
                 type='text'
                 name='name'
                 value={this.state.name}
-                className={`form-control formInput ${formErrors.name.length > 0 ? 'error' : null}`}
+                id={`form-control formInput ${formErrors.name.length > 0 ? 'error' : null}`}
                 onChange={this.handleChange}
-                // placeholder='Name'
                 required
-                id="fielddesign"
+                className="fielddesign"
               ></input>
               <label>Name:</label>
               {formErrors.name.length > 0 && (
@@ -168,10 +170,10 @@ class ContactForm extends Component {
                 type='text'
                 name='email'
                 value={this.state.email}
-                className={`form-control formInput ${formErrors.email.length > 0 ? 'error' : null}`}
+                id={`form-control formInput ${formErrors.email.length > 0 ? 'error' : null}`}
                 onChange={this.handleChange}
                 required
-                id="fielddesign"
+                className="fielddesign"
               ></input>
               <label>Email:</label>
               {formErrors.email.length > 0 && (
@@ -183,11 +185,10 @@ class ContactForm extends Component {
                   type='text'
                   name='linkedin'
                   value={this.state.linkedin}
-                  className={`form-control formInput ${formErrors.linkedin.length > 0 ? 'error' : null}`}
+                  id={`form-control formInput ${formErrors.linkedin.length > 0 ? 'error' : null}`}
                   onChange={this.handleChange}
-                  // placeholder='LinkedIn URL'
                   required
-                  id="fielddesign"
+                  className="fielddesign"
                 ></input>
                 <label>LinkedIn URL:</label>
                 {formErrors.linkedin.length > 0 && (
@@ -201,13 +202,13 @@ class ContactForm extends Component {
                 rows='5'
                 name='message'
                 value={this.state.message}
-                className={`form-control formInput ${
+                id={`form-control formInput ${
                   formErrors.message.length > 0 ? 'error' : null
                 }`}
                 onChange={this.handleChange}
                 placeholder=' Message'
                 noValidate
-                id="fielddesign"
+                className="fielddesign"
               ></textarea>
               {formErrors.message.length > 0 && (
                 <p className='errorMessage' id='msgError'>{formErrors.message}</p>

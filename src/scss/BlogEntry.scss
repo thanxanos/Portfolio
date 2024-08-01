@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap');
 .card {
-  padding: 15px;
+  padding: 1rem;
   flex-direction: row;
   flex-flow: row wrap;
-  max-width: 350px;
-  max-height: 525px;
+  max-width: 22rem;
+  max-height: 33rem;
   background-color: white;
-  margin: 15px;
+  margin: 1rem;
   border-radius: 10px;
   flex-grow: 2;
   -webkit-transform: perspective(0.5px) translateZ(0);
@@ -64,7 +64,7 @@ hr::after {
 
 .blog-btn{
   display: inline-block;
-  background: #333;
+  background: #333333;
   color: #fff;
   font-size: 16px;
   text-decoration: none;

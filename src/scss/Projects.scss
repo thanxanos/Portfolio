@@ -12,39 +12,39 @@
 }
 
 .projects-wrapper{
-  padding: 40px 24px 80px 24px;
+  padding: 4.5rem 2rem 4.5rem 2rem;
   height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 32px;
+  justify-content: center;
+  gap: 3.5rem;
   //border-radius: 10px;
 }
 
 .portfoliotitle {
-  color: #071e3d;
+  color: #333333;
   font-family: "Posterama 1927 W01 UltraBlack";
   font-size: 60px;
   font-weight: 500;
   font-optical-sizing: auto;
-  padding-top: 40px;
+  padding-top: 2.5rem;
 }
 
 .desc-image {
   max-width: 100%;
   max-height: 100%;
-  margin-top: 24px;
+  margin-top: 1.5rem;
   border-radius: 10px;
 }
 
 .project-card{
-  height: 480px;
-  width: 530px;
+  height: 30rem;
+  width: 33rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 .project-card h2{
   font-family: "Open Sans", sans-serif;
@@ -74,8 +74,7 @@
 .project-card{
   // border: 1px solid rgb(53, 53, 53);
   height: auto;
-  order: 1;
-  max-width: 630px;
+  width: 39.5rem;
   position: relative;
 }
 .text-hover{
@@ -101,10 +100,9 @@
 .lang-tag {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  margin-top: 7px;
+  margin-top: 0.5rem;
   align-items: center;
   text-align: center;
-  margin-left: 8px;
   color: #071E3D;
   border-style: solid;
   background-color: var(--creamWhite);
@@ -137,7 +135,9 @@
 }
 
 .button-div {
-  margin-top: 16px;
+  margin: 1rem 0 1rem 0;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .link-class{

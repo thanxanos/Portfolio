@@ -2,38 +2,43 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "config-overrides-path": "node_modules/react-app-rewired/config-overrides.js",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "axios": "^1.7.2",
-    "emailjs-com": "^2.6.4",
+    "crypto": "npm:crypto-browserify",
+    "dotenv-webpack": "^8.1.0",
     "font-awesome": "^4.7.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "path": "^0.12.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-icons": "^4.2.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.1",
-    "react-toastify": "^6.2.0",
+    "react-toastify": "^10.0.5",
     "sass": "^1.77.8",
     "simplebar": "^5.3.0",
+    "stream": "npm:stream-browserify@^3.0.0",
     "typewriter-effect": "^2.17.0",
     "url-loader": "^3.0.0",
+    "vm-browserify": "^1.1.2",
     "web-vitals": "^0.2.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "scripts": {
+    "preinstall": "npx npm-force-resolutions",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
@@ -48,6 +53,20 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@eslint/js": "^9.8.0",
+    "assert": "^2.1.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "eslint-plugin-react": "^7.35.0",
+    "globals": "^15.8.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "react-error-overlay": "6.0.9",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.4"
   }
 }

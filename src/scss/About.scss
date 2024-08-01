@@ -18,7 +18,13 @@ p {
   left: 3%;
   top: 4%;
   object-fit: contain;
+}
 
+div.Typewriter{
+  font-size: 60px;
+  width: 805px;
+  height: auto;
+  text-align: center;
 }
 
 .about-wrapper{
@@ -65,17 +71,30 @@ p {
 
 @media (max-width: 1369px) {
   .arrowcircledown {
-    margin-bottom: -40px;
+    margin-bottom: -25px;
   }
 }
 
-div.Typewriter{
+@media (max-width: 425px) {
+  .arrowcircledown {
+    visibility: hidden;
+  }
+  .about-wrapper {
+   display: block;
+   font-size: 35px;
+  }
 
-  font-size: 60px;
-  width: 805px;
-  height: auto;
-  text-align: center;
+  div.Typewriter{
+    font-size: 35px;
+    width: auto;
+  }
+
+  .aboutimg {
+    visibility: hidden;
+  }
+
 }
+
 
 
 // div.logo-div{
@@ -93,6 +112,10 @@ div.Typewriter{
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+}
+
+.aboutimg svg {
+  fill: #333333;
 }
 
 @keyframes fadeInAnimation {

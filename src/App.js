@@ -5,7 +5,7 @@ import Navbar from './Controllers/Navbar';
 import AboutController from './Controllers/AboutController';
 import SkillsController from './Controllers/SkillsController';
 import BlogController from './Controllers/BlogController';
-import ProjectsController from './Controllers/ProjectsController';
+//import ProjectsController from './Controllers/ProjectsController';
 import ProjectsControllerNew from './Controllers/ProjectControllerNew';
 import ContactController from './Controllers/ContactController';
 import FooterController from './Controllers/FooterController';
