@@ -7,7 +7,7 @@ class FooterController extends React.Component {
     return(
       <div className='footer'>
         <div className='footer-wrapper'>
-          <p>🤖 thanks for stopping by! </p>
+          <p>🤖 Thanks for stopping by! </p>
         </div>
       </div>
     )
