@@ -141,13 +141,14 @@ class ContactForm extends Component {
 
     return (
       <div id="contact">
-        <div className="contactabout">
+        <div><img className="contactimg" src={atoms} /></div>
+        <div data-aos="fade-right" data-aos-duration="800" className="contactabout">
           <h1>Contact</h1>
           <p><span className="contact-star">✦</span> Have a question? Let's connect! <span className="contact-star">✦</span></p>
           <ContactLinkController />
         </div>
-        <div className="contactwrapper">
-        <form id='contact-form' onSubmit={this.handleSubmit} noValidate>
+        <div data-aos="fade-left" data-aos-duration="800"  className="contactwrapper">
+        <form  id='contact-form' onSubmit={this.handleSubmit} noValidate>
           <div className='row'>
             <div className='namefield'>
             
@@ -222,7 +223,6 @@ class ContactForm extends Component {
 
         <ToastContainer />
         </div>
-        <img className="contactimg" src={atoms} />
       </div>
     );
   }

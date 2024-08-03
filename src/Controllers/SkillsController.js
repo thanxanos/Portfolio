@@ -6,12 +6,14 @@ import * as SiIcons from 'react-icons/si';
 import * as FiIcons from 'react-icons/fi';
 import * as AiIcons from 'react-icons/ai';
 
+
 import '../scss/Skills.scss';
 
 class SkillsController extends React.Component {
   render(){
     return(
-      <div id="skills">
+    <div id="skills">
+      <div data-aos-duration="800" data-aos="fade-up" className='skills-height'>
         <div className="header-div">
             <h2>SKILLS</h2>
           </div>
@@ -65,6 +67,7 @@ class SkillsController extends React.Component {
             <p>Adobe Photoshop</p>
           </div>
         </div>
+      </div>
       </div>
     )
   }

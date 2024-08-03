@@ -1,0 +1,64 @@
+
+
+.seal-wrapper {
+  color:var(--mainColor);
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  gap: 1rem;
+
+}
+
+.oop{
+  text-align: center;
+  position: relative;
+}
+
+.oop span {
+  position: relative;
+  display: inline-block;
+  animation: animate 1s ease-out infinite;
+  animation-delay: calc(.1s * var(--c));
+}
+
+.seal-btn {
+  padding: 20px 40px 20px 40px;
+  background-color: #6DDCF4;
+  border-style: none;
+  border-radius: 10px;
+}
+
+.seal-btn:hover {
+  animation: spin .5s linear infinite;
+}
+
+.spinny{
+  animation: spin .7s linear infinite;
+}
+
+@keyframes animate {
+  5%{
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(10px);
+  }
+  20% {
+    transform: translateY(-35px);
+  }
+  50%,100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+iframe {
+  border-radius: 10px;
+}

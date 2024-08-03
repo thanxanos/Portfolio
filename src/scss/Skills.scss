@@ -2,15 +2,21 @@
   padding-top: 3.5rem;
   margin: 0 5rem;
   color: var(--coldWhite);
-  height: auto;
+  min-height: 100vh;
   padding-bottom: 4.5rem;
 }
 
+.skills-height {
+  height: 100%;
+}
+
 .skills-wrapper{
+  align-content: space-evenly;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
+  height: 100%;
 }
 
 #skill-card{

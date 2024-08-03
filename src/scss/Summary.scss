@@ -1,0 +1,30 @@
+#about {
+  display: flex;
+  margin: 0 5rem;
+  color: var(--coldWhite);
+  min-height: 70vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.summary-text h1 {
+  text-align: right;
+  font-family: "Posterama 1927 W01 UltraBlack";
+  font-size: 70px;
+  font-weight: 500;
+  padding-top: 2.5rem;
+}
+
+.summary-text p {
+  //font-family: "Roboto Slab", serif;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+
+.summary-img{
+  height: 100%;
+  width: 243px;
+  object-fit: cover;
+}

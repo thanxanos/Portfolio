@@ -102,27 +102,27 @@ div.Typewriter{
 //   // transform: translate(0,-50px);
 // }
 
-.logo-div {
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
+// .logo-div {
+//   animation: fadeInAnimation ease 3s;
+//   animation-iteration-count: 1;
+//   animation-fill-mode: forwards;
+// }
 
-.aboutimg{
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
+// .aboutimg{
+//   animation: fadeInAnimation ease 3s;
+//   animation-iteration-count: 1;
+//   animation-fill-mode: forwards;
+// }
 
 .aboutimg svg {
   fill: #333333;
 }
 
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
-}
+// @keyframes fadeInAnimation {
+//   0% {
+//       opacity: 0;
+//   }
+//   100% {
+//       opacity: 1;
+//   }
+// }

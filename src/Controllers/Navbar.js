@@ -28,7 +28,7 @@ function Navbar(){
           <div className="max-width">
             <div className="logo"><li><Link
               activeClass="active"
-              to="about"
+              to="landing"
               spy={true}
               smooth={true}
               offset={-72}
@@ -44,15 +44,15 @@ function Navbar(){
               duration={500}
               onClick={() => setNavbar(false)}
               >Home</Link></li> */}
-            {/* <li><Link
+            <li><Link
               activeClass="active"
               to="about"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-72}
               duration={500}
               onClick={() => setNavbar(false)}
-            >About</Link></li> */}
+            >ABOUT</Link></li>
             <li><Link
               activeClass="active"
               to="skills"
@@ -90,7 +90,9 @@ function Navbar(){
               onClick={() => setNavbar(false)}
             >CONTACT</Link></li>
             {/* <li><img className='navimg' src={smallShape} /></li> */}
-            <li className="star">✦</li>
+            
+            <a className="star" href="/surprise">✦</a>
+           
             {/* <li><Resume /></li> */}
             </ul>
             <div className={visible ? "menu-btn" : "menu-btn--hidden"} onClick={showNavbar}>
