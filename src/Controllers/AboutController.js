@@ -1,7 +1,7 @@
 import React from 'react';
 import '../scss/About.scss';
 import groupShape from './../imgFolder/group_shapes.png'
-import {ReactComponent as Logo} from '../docs/portfolio_pic3.svg'
+import { ReactComponent as Logo } from '../docs/portfolio_pic3.svg'
 import Typewriter from 'typewriter-effect';
 import { Link } from 'react-scroll';
 import { FaArrowCircleDown } from "react-icons/fa";

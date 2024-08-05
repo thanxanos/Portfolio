@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.scss';
-import { BrowserRouter, Route, Routes } from "react-dom";
 import Navbar from './Controllers/Navbar';
 import SummaryController from './Controllers/SummaryController';
 import AboutController from './Controllers/AboutController';
@@ -9,7 +8,6 @@ import BlogController from './Controllers/BlogController';
 import ProjectsControllerNew from './Controllers/ProjectControllerNew';
 import ContactController from './Controllers/ContactController';
 import FooterController from './Controllers/FooterController';
-import Seal from './Controllers/Seal'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 // import GridController from './Controllers/GridController';

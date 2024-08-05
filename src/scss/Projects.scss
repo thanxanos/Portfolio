@@ -19,7 +19,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 3.5rem;
-  //border-radius: 10px;
 }
 
 .portfoliotitle {
@@ -76,26 +75,57 @@
   height: auto;
   width: 39.5rem;
   position: relative;
-}
-.text-hover{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 100px;
-  position: absolute;
-  font-size: 40px;
-  top: 116px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 10px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 450px;
-  background: rgba(41, 44, 46, 0.72);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .2s, visibility .2s;
-}
+ }
+
+ .overlay {
+  display: none;
+ }
+
+.desc-image:hover .overlay {
+  margin-top: 1.5rem;
+  background:rgba(0,0,0,.5);
+  position:absolute;
+  height: 68%;
+  bottom: 5px;
+  display: block;
+  transition: 0.3s ease-in-out;
+ }
+// .text-hover{
+//   display: flex;
+//   font-family: 'Montserrat', sans-serif;
+//   position: absolute;
+//   height: 68%;
+//   bottom: 5px;
+//   margin-top: 1.5rem;
+//   margin: 0;
+//   border-radius: 10px;
+//   text-align: center;
+//   background: rgba(41, 44, 46, 0.72);
+//   color: #fff;
+//   opacity: 0;
+// }
+
+
+// .project-card:hover .text-hover {
+//   opacity: 1;
+//   transition: 0.3s ease-in-out;
+//   display: block
+// }
+
+// @media (width:1383px) {
+//   .text-hover {
+//     height: 68.8%;
+//     bottom: 0px;
+//   }
+// }
+
+// @media (width:1382px) {
+//   .text-hover {
+//     height: 69%;
+//     bottom: 0px;
+//   }
+// }
+
 
 .lang-tag {
   font-family: "Open Sans", sans-serif;
@@ -115,15 +145,17 @@
 
 
 
-.desc-image:hover svg:hover {
-  -webkit-transform: scale(1.10);
-  transform: scale(1.10);
-}
 
-.desc-image:hover .text-hover{
-  visibility: visible;
-  opacity: 1;
-}
+// .desc-image:hover svg:hover {
+//   -webkit-transform: scale(1.10);
+//   transform: scale(1.10);
+// }
+
+// .desc-image:hover .text-hover{
+//   margin-top: 0.5rem;
+//   visibility: visible;
+//   opacity: 1;
+// }
 
 .text-card {
   font-size: 20px;

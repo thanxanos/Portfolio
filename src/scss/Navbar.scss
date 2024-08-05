@@ -136,6 +136,17 @@ $mainColor: #071e3d;
   }
 }
 
+@media (max-width: 425px){
+  .star {
+    padding-left: 0px;
+  }
+  .navbar .menu li a{
+    display: inline-block;
+    margin: 2rem;
+    font-size: 2rem;
+  }
+}
+
 @supports(-webkit-backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) or
 (backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) {
 .navbar-b.navbar-reduce {
