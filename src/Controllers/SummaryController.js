@@ -10,7 +10,8 @@ class SummaryController extends React.Component {
         <img className="summary-img" src={largeSparkle} />
         <div className='summary-text'>
           <h1>About</h1>
-          <p>Fullstack Engineer with 2 years of UX experience. </p>
+          <p></p>
+          <p>Fullstack Engineer </p>
           </div>
         
       </div>
