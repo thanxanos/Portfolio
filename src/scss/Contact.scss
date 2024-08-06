@@ -4,7 +4,7 @@
 
 #contact {
   padding-top: 5rem;
-  min-height: 100vh;
+  min-height: 95vh;
   margin: 0 5rem 0 5rem;
   padding-bottom: 5rem;
   display: flex;
@@ -209,7 +209,7 @@ p.errorMessage:focus {
   filter: grayscale(1) invert(1);
 }
 
-@media (max-width:425px) {
+@media (max-width:441px) {
   .contactabout {
     margin-left:0;
     width: 80%;
