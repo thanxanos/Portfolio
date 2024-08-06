@@ -32,7 +32,6 @@ class ProjectsControllerNew extends React.Component {
                   <p className='desc-text'>Terminal based RPG game. Play as a knight and forge your path.</p>
                     <img className='desc-image' src={knightQ} alt="doublC"></img>
                       <p className="overlay" >
-                        <a title="video" href="https://youtu.be/fnro7p4HKyM">VIDEO</a>
                         <a title="git" href="https://github.com/thanxanos/Knight-Quest">GITHUB</a>
                       </p> 
                 </div>
@@ -44,9 +43,9 @@ class ProjectsControllerNew extends React.Component {
                   <p className='desc-text'>In-Browser React game. Play as a detective and solve puzzles.</p>
                     <img className='desc-image' src={doubleC} alt="doublC"></img>
                       <p className="overlay" >
-                        <a title="video" href="https://youtu.be/-9TG-lpDn6c">VIDEO</a>
-                        <a title="git" href="https://github.com/zoexanos/Decoder-Frontend">GITHUB</a>
-                        <a title="live" href="https://double-cryptography.herokuapp.com/">LIVE</a>
+
+                        <a title="git" href="">GITHUB</a>
+                        <a title="live" href="">LIVE</a>
                       </p> 
                 </div>
               </div>

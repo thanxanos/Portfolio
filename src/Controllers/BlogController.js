@@ -42,7 +42,7 @@ class BlogController extends React.Component {
 
 
   componentDidMount() {
-    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@zoexanos')
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@thanxanos')
       .then(resp => resp.json())
       .then(blogs => this.setState({ blogs: blogs.items.slice(0,3)}))
   }
@@ -52,7 +52,7 @@ class BlogController extends React.Component {
       <div className="blog">
         <div className="blog-buffer"></div>
         <div data-aos="fade-in" data-aos-duration="800" className="title">
-            <h1>Medium | <span>@zoexanos</span></h1>
+            <h1>Medium | <span>@thanxanos</span></h1>
           </div>
         <div data-aos="zoom-out-up" delay="40" data-aos-duration="800" id="blogwrapper">
             {this.state.blogs.map(entry => <BlogEntry key={entry.pubDate} entry={entry} images={this.newImages()} />)}

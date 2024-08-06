@@ -33,7 +33,7 @@ function Navbar(){
               smooth={true}
               offset={-72}
               duration={500}
-              >Zoe Xanos</Link></li></div>
+              >Than Xanos</Link></li></div>
             <ul className={ navbar ? 'menu active': 'menu'}>
             {/* <li><Link
               activeClass="inactive"
