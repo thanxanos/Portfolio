@@ -51,7 +51,7 @@ class BlogController extends React.Component {
     return(
       <div className="blog">
         <div className="blog-buffer"></div>
-        <div data-aos="fade-in" data-aos-duration="1100" className="title">
+        <div data-aos="fade-in" data-aos-duration="800" className="title">
             <h1>Medium | <span>@zoexanos</span></h1>
           </div>
         <div data-aos="zoom-out-up" delay="50" data-aos-duration="800" id="blogwrapper">

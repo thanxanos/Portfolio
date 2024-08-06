@@ -185,22 +185,24 @@
 
 @media (max-width: 640px) {
   .overlay {
-    position: absolute;
-    overflow: hidden;
-    height: 0;
+    //position: absolute;
+    height: fit-content;
     width: fit-content;
+    bottom: -60px;
     background-color:transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 1.5rem;
-    transition: .2s ease;
   }
-
   .text-card:hover .overlay{
     height: fit-content;
-    bottom: -10%;
+    width: fit-content;
+    bottom: -60px;
+    background-color:transparent;
+    gap: 1.5rem;
   }
+  .overlay a:hover {
+    border-color: var(--smokyBlue);
+  }
+
 }
 
 @media (max-width: 320px) {

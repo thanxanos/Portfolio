@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
-.about-div {
+#landing {
   color: black;
   background-color: #f8f8f9;
   height: auto;
@@ -37,6 +37,10 @@ div.Typewriter{
   width: 100%;
   font-size: 60px;
   text-align: center;
+}
+
+.text-div {
+  min-height: 256px;
 }
 .small-t {
   font-family: 'Montserrat', sans-serif;
@@ -75,6 +79,22 @@ div.Typewriter{
   }
 }
 
+@media (max-width:704px) {
+  .about-wrapper {
+    display: block;
+    font-size: 50px;
+   }
+ 
+   div.Typewriter{
+     font-size: 50px;
+     width: auto;
+   }
+ 
+   .aboutimg {
+     visibility: hidden;
+   }
+}
+
 @media (max-width: 441px) {
   .arrowcircledown {
     visibility: hidden;
@@ -82,6 +102,9 @@ div.Typewriter{
   .about-wrapper {
    display: block;
    font-size: 35px;
+  }
+  div.text-div {
+    min-height: 256px;
   }
 
   div.Typewriter{
@@ -96,11 +119,14 @@ div.Typewriter{
 }
 
 @media (max-width: 375px) {
-  .arrowcircledown {
-    visibility: hidden;
-    }
-  }
+  #landing {
+      align-content:flex-start;
+      min-height: 100vh;
 
+    }
+
+
+}
 
 
 // div.logo-div{

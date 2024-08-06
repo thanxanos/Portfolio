@@ -10,6 +10,7 @@
 
 .summary-text {
   width: 45%;
+  min-width: 260px;
 }
 
 .summary-text h1 {
@@ -33,7 +34,7 @@
   object-fit: cover;
 }
 
-@media (width:441px) {
+@media (max-width:441px) {
   #about {
     padding-top: 15px;
   }
@@ -46,7 +47,7 @@
   }
 }
 
-@media (width:375px) {
+@media (max-width:375px) {
   #about {
     padding-top: 15px;
   }
