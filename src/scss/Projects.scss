@@ -11,13 +11,13 @@
 }
 
 .projects-wrapper{
-  padding: 4.5rem 2rem 4.5rem 2rem;
+  padding: 4.5rem 0 4.5rem 0;
   height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 3.5rem;
+  justify-content: space-around;
+
 }
 
 .portfoliotitle {
@@ -29,9 +29,19 @@
   padding-top: 2.5rem;
 }
 
+.project-card{
+  height: 30rem;
+  width: 33rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 8rem;
+}
+
 .desc-image {
   max-width: 100%;
   max-height: 100%;
+  display: block;
 }
 
 .desc-text {
@@ -43,14 +53,6 @@
   color: #333333;
 }
 
-.project-card{
-  height: 30rem;
-  width: 33rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
 .project-card h2{
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -82,6 +84,16 @@
   position: relative;
  }
 
+ .text-card {
+  height: auto;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .lang-tag {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -99,32 +111,10 @@
 }
 
 
-
-
-// .desc-image:hover svg:hover {
-//   -webkit-transform: scale(1.10);
-//   transform: scale(1.10);
-// }
-
-// .desc-image:hover .text-hover{
-//   margin-top: 0.5rem;
-//   visibility: visible;
-//   opacity: 1;
-// }
-
-.text-card {
-  font-size: 20px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
 .button-div {
   display: flex;
   gap: 0.5rem;
+  margin-top: -10px;
 }
 
 .link-class{
@@ -134,43 +124,87 @@
   margin: 15px;
 }
 
-// @media(max-width: 1399px){
-//   .text-hover{
-//     visibility: hidden;
-//   }
-//   .img-card:hover .text-hover{
-//     visibility: hidden;
-//     opacity: 1;
-//   }
-//   .mobile-text{
-//     text-align: center;
-//     color: black;
-//     visibility: visible;
-//   }
-//   .mobile-link{
-//     color: black;
-//     height: 100px;
-//     width: auto;
-//     margin: 15px;
-//   } 
-//   #card-1{
-//     order: 0;
-//   }
-//   #card-2{
-//     order: -1;
-//   }
-//   #card-3{
-//     order: 1;
-//   }
-//   #card-4{
-//     order: 2;
-//   }
-//   //this is input for the next project
-//   // #card-5{
-//   //   order: 3;
-//   // }
-//   // #card-6{
-//   //   order: 4;
-//   // }
+.overlay {
+  position: absolute;
+  overflow: hidden;
+  height: 0;
+  bottom: 30px;
+  width: 441px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  transition: .2s ease;
+}
 
-//}
+.overlay a {
+  color: #ffffff;
+  border-style: solid;
+  background-color: var(--creamWhite);
+  border-width: 2px;
+  font-size: 20px;
+  padding: 4px 12px 4px 12px;
+  background-color: var(--smokyBlue);
+  border-color: var(--smokyBlue);
+  border-radius: 70px;
+  transition: all .2s ease;
+}
+
+.overlay a:hover {
+  background-color: #ffffff;
+  color: var(--smokyBlue);
+  border-color: #ffffff;
+}
+
+.text-card:hover .overlay{
+  bottom: 30px;
+  height: 283px;
+}
+
+@media (max-width: 1383px){
+  .overlay {
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    bottom: 30px;
+    width: 441px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: .2s ease;
+  }
+
+  .text-card:hover .overlay{
+    bottom: 30px;
+    height: 283px;
+  }
+}
+
+@media (max-width: 640px) {
+  .overlay {
+    position: absolute;
+    overflow: hidden;
+    height: 0;
+    width: fit-content;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: .2s ease;
+  }
+
+  .text-card:hover .overlay{
+    height: fit-content;
+    bottom: -10%;
+  }
+}
+
+@media (max-width: 320px) {
+  .overlay {
+    gap: 2px;
+  }
+}
