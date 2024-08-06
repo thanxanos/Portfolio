@@ -39,9 +39,6 @@ div.Typewriter{
   text-align: center;
 }
 
-.text-div {
-  min-height: 256px;
-}
 .small-t {
   font-family: 'Montserrat', sans-serif;
   font-size: 55%;
@@ -77,6 +74,9 @@ div.Typewriter{
   .arrowcircledown {
     margin-bottom: -25px;
   }
+  .text-div {
+    min-height: 256px;
+  }
 }
 
 @media (max-width:704px) {
@@ -93,6 +93,10 @@ div.Typewriter{
    .aboutimg {
      visibility: hidden;
    }
+
+   .text-div {
+    min-height: 256px;
+  }
 }
 
 @media (max-width: 441px) {
@@ -103,8 +107,8 @@ div.Typewriter{
    display: block;
    font-size: 35px;
   }
-  div.text-div {
-    min-height: 256px;
+  .text-div {
+    min-height: 180px;
   }
 
   div.Typewriter{
@@ -128,33 +132,6 @@ div.Typewriter{
 
 }
 
-
-// div.logo-div{
-  
-//   // transform: translate(0,-50px);
-// }
-
-// .logo-div {
-//   animation: fadeInAnimation ease 3s;
-//   animation-iteration-count: 1;
-//   animation-fill-mode: forwards;
-// }
-
-// .aboutimg{
-//   animation: fadeInAnimation ease 3s;
-//   animation-iteration-count: 1;
-//   animation-fill-mode: forwards;
-// }
-
 .aboutimg svg {
   fill: #333333;
 }
-
-// @keyframes fadeInAnimation {
-//   0% {
-//       opacity: 0;
-//   }
-//   100% {
-//       opacity: 1;
-//   }
-// }

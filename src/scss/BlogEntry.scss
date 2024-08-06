@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500&display=swap');
+
 .card {
   padding: 1rem;
-  flex-direction: row;
-  flex-flow: row wrap;
-  max-width: 22rem;
-  max-height: 33rem;
+  width: 20%;
+  min-width: 22rem;
+  min-height: 33rem;
   background-color: white;
   margin: 1rem;
   border-radius: 10px;
-  flex-grow: 2;
   -webkit-transform: perspective(0.5px) translateZ(0);
   transform: perspective(0.5px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -16,7 +15,10 @@
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
   transition-property: transform;
+}
 
+.blog-description {
+  align-content: center;
 }
 
 .card:hover, .card:focus, .card:active{
@@ -68,7 +70,8 @@ hr::after {
   color: #fff;
   font-size: 16px;
   text-decoration: none;
-  padding: 16px 120px;
+  padding: 16px;
+  width: 100%;
   border: none;
   border-radius: 30px;
   box-shadow: inset 0 0 0 0 #CD966B;
@@ -109,6 +112,11 @@ a :hover{
   .title h1 {
     text-align: left;
     margin-left: 20px;
+  }
+
+
+.blog-btn{
+  padding: 16px 100px;
   }
   
 }

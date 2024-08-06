@@ -54,7 +54,7 @@ class BlogController extends React.Component {
         <div data-aos="fade-in" data-aos-duration="800" className="title">
             <h1>Medium | <span>@zoexanos</span></h1>
           </div>
-        <div data-aos="zoom-out-up" delay="50" data-aos-duration="800" id="blogwrapper">
+        <div data-aos="zoom-out-up" delay="40" data-aos-duration="800" id="blogwrapper">
             {this.state.blogs.map(entry => <BlogEntry key={entry.pubDate} entry={entry} images={this.newImages()} />)}
         </div>
       </div>
