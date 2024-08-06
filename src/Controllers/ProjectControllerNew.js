@@ -20,7 +20,7 @@ class ProjectsControllerNew extends React.Component {
                     <img className='desc-image' src={doubleC} alt="doublC"></img>
                       <p className="overlay" >
                         <a title="video" href="https://youtu.be/-9TG-lpDn6c">VIDEO</a>
-                        <a title="git" href="https://github.com/zoexanos/Decoder-Frontend">GITHUB</a>
+                        <a title="git" href="https://github.com/thanxanos/Decoder-Frontend">GITHUB</a>
                         <a title="live" href="https://double-cryptography.herokuapp.com/">LIVE</a>
                       </p> 
                 </div>
@@ -33,7 +33,7 @@ class ProjectsControllerNew extends React.Component {
                     <img className='desc-image' src={knightQ} alt="doublC"></img>
                       <p className="overlay" >
                         <a title="video" href="https://youtu.be/fnro7p4HKyM">VIDEO</a>
-                        <a title="git" href="https://github.com/zoexanos/Knight-Quest">GITHUB</a>
+                        <a title="git" href="https://github.com/thanxanos/Knight-Quest">GITHUB</a>
                       </p> 
                 </div>
               </div>

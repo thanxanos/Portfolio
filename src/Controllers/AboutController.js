@@ -16,7 +16,7 @@ class AboutController extends React.Component {
           <img className="aboutimg" src={groupShape} />
           <div className="about-wrapper">
               <div className="text-div">
-                <p><span className="small-t">my name is </span>Zoe Xanos</p>
+                <p><span className="small-t">my name is </span>Than Xanos</p>
                 <Typewriter 
                   className="typewriter-div"
                   options={{
