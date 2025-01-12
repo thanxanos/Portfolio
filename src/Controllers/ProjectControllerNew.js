@@ -36,7 +36,7 @@ class ProjectsControllerNew extends React.Component {
                       <p className="overlay" >
 
                         <a title="git" href="https://github.com/thanxanos/londonunderground" target="_blank" rel="noopener noreferrer">GITHUB</a>
-                        <a title="live" href="">LIVE</a>
+                        <a title="live" href="https://londonundergound-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">LIVE</a>
                       </p> 
                 </div>
               </div>
