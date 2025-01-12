@@ -23,7 +23,7 @@ class ProjectsController extends React.Component {
           </div>
           <div className="project-card" id="card-2">
             <div className="text-card">
-              <h2>Double Cryptography</h2>
+              <h2>Storyline</h2>
               <div className='button-div'><button className='lang-tag'>ruby on rails</button><button className='lang-tag'>react.js</button></div>
               <p><img className='desc-image' src={doubleC} alt="doublC"></img></p>
               {/* <p>I created a browser-based game using Ruby on Rails for the back end and React for the front end. Users can log in to solve interactive puzzles with the help of a detective.</p>

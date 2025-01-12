@@ -18,7 +18,7 @@
   font-family: "Posterama 1927 W01 UltraBlack";
   font-size: 70px;
   font-weight: 500;
-  padding-top: 2.5rem;
+  padding-top: 3rem;
 }
 
 .summary-text p {
@@ -32,6 +32,7 @@
   height: 100%;
   width: 243px;
   object-fit: cover;
+  padding-top: 3.5rem;
 }
 
 @media (max-width:441px) {
@@ -58,4 +59,8 @@
     text-align: center;
     width: 90%;
   }
+}
+
+.ps-p {
+  margin-top: 16px;
 }
