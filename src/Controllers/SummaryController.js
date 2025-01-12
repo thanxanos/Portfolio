@@ -10,7 +10,7 @@ class SummaryController extends React.Component {
         <img data-aos="fade-right" className="summary-img" src={largeSparkle} />
         <div data-aos="fade-left" className='summary-text'>
           <h1>About</h1>
-          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Rhoncus neque platea orci non curae sem vitae. Feugiat donec dictum cras blandit orci rhoncus consectetur? Volutpat id nullam facilisis, odio suspendisse ante. Sodales sem sollicitudin pulvinar suscipit in suscipit. Consequat tempor nisl vulputate nunc; maximus curae ridiculus. Libero himenaeos neque; conubia per praesent in tellus mattis. Cursus auctor gravida nulla ultrices potenti ultrices placerat dictumst. </p>
+          <p>My name is Than Xanos, I'm a front-end developer and UX designer based in Seattle, Washington. With a love for science and art, I look for innovative ways to combine them in my work. I approach technology and design with the same thought process: This is a blank canvas, what do I want to say?</p>
           </div>
         
       </div>
