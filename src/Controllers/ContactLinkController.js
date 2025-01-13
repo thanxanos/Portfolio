@@ -15,7 +15,7 @@ class ContactLinkController extends React.Component {
           <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://x.com/thanxanos"><img className='fa-twitter' src={twitter} alt="twitterlogo" /></a>
+          href="https://x.com/zoexanos"><img className='fa-twitter' src={twitter} alt="twitterlogo" /></a>
           <a
           target="_blank"
           rel="noopener noreferrer"
@@ -24,7 +24,7 @@ class ContactLinkController extends React.Component {
           className="mediumlogo"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://thanxanos.medium.com/"><img src={medium} alt="mediumlogo" /></a>
+          href="https://zoexanos.medium.com/"><img src={medium} alt="mediumlogo" /></a>
           <a 
           target="_blank"
           rel="noopener noreferrer"
