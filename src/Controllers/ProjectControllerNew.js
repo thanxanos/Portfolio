@@ -8,7 +8,7 @@ import * as AiIcons from 'react-icons/ai';
 import * as DiIcons from 'react-icons/di';
 
 class ProjectsControllerNew extends React.Component {
-  
+
   render(){
     return(
       <div id="projects">
@@ -19,7 +19,7 @@ class ProjectsControllerNew extends React.Component {
                 <div className="text-card">
                   <h2>Storyline</h2>
                   <div className='button-div'><button className='lang-tag'>figma</button><button className='lang-tag'>react.js</button></div>
-                  <p className='desc-text'>Work In Progress: Book subscription service website with Draftbit Book API. Created with a Design System approach in figma before implemented through React.JS</p>
+                  <p className='desc-text'>Work In Progress: Book subscription service website with Draftbit Book API. Created with a Design System approach in figma before implemented through React.js</p>
                     <img className='desc-image' src={storyline} alt="doublC"></img>
                       <p className="overlay" >
                         <a title="video" href="https://www.figma.com/design/qO1Vt3mS2jZIXVOQXCV9nn/Portfolio?node-id=425-4&t=Vc4OPS0S8CjGUn9U-1" target="_blank" rel="noopener noreferrer">FIGMA</a>
