@@ -8,6 +8,7 @@ import * as AiIcons from 'react-icons/ai';
 import * as DiIcons from 'react-icons/di';
 
 class ProjectsControllerNew extends React.Component {
+  
   render(){
     return(
       <div id="projects">
