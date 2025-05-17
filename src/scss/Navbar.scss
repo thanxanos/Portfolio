@@ -145,6 +145,10 @@ $mainColor: #071e3d;
     margin: 2rem;
     font-size: 2rem;
   }
+
+  .navbar .menu {
+    -index: 998;
+  }
 }
 
 @supports(-webkit-backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) or
